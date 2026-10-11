@@ -1,0 +1,92 @@
+# PCCompat-TG 정제 파이프라인 설정. 코드에는 값·컬럼명을 하드코딩하지 않고 여기서 읽는다.
+# 표기: "설계값"은 근거 데이터가 아니라 우리가 정한 값이다(데이터 시트에 그대로 공개).
+
+seed: 20261012
+
+window:
+  start: 2020-10-01   # 수집 범위 시작(사용자 결정: 최근 6년)
+  end: 2026-10-31
+
+split:
+  # 시간 기준 family-group 분할. 경계는 설계값이며 수집 후 비율(60/15/25)을 보고 분기 단위로 조정한다.
+  date_column: release_date
+  group_column: family
+  train_end: 2023-06-30
+  val_end: 2024-06-30
+  target_ratio: {train: 0.60, val: 0.15, test: 0.25}
+  ratio_tolerance: 0.05
+  # GPU는 모델 출시일 기준(사용자 결정 2026-10-08, 선택 (다)): 2023-07~2024-06에 새 GPU 세대가 없어 세대 단위면 검증 구간이 빈다.
+  # 대가: 같은 세대 형제 모델이 서로 다른 분할에 들어갈 수 있다(데이터 시트에 한계로 명시). CPU는 세대 단위 유지.
+  model_level_categories: [GPU]
+
+# 단종일 가정: 같은 계열(lineage)의 다음 세대 첫 출시일 = 이전 세대 단종일. (사용자 결정, 데이터 시트에 명시)
+# 날짜는 여기 적지 않는다. 다음 세대 노드들의 최소 release_date에서 계산한다.
+lineage:
+  amd_cpu: ["Ryzen 5000", "Ryzen 7000", "Ryzen 9000"]
+  amd_apu: ["Ryzen 5000G", "Ryzen 8000G"]
+  intel_cpu: ["Core 11th Gen", "Core 12th Gen", "Core 13th Gen", "Core 14th Gen", "Core Ultra 200S", "Core Ultra 200S Refresh"]
+  nvidia_gpu: ["GeForce RTX 30", "GeForce RTX 40", "GeForce RTX 50"]
+  amd_gpu: ["Radeon RX 6000", "Radeon RX 7000", "Radeon RX 9000"]
+  intel_gpu: ["Arc A", "Arc B"]
+  # 칩셋 단종일(사용자 결정 2026-10-08, 선택 (나)): 다음 소켓 세대 칩셋의 첫 출시일. 실제로는 B450처럼 계속 팔리는 경우가 있어
+  # 분석에서 '열린 구간' 변형을 민감도로 함께 보고한다.
+  amd_chipset: ["AM4", "AM5"]
+  intel_chipset: ["LGA 1200", "LGA 1700", "LGA 1851"]
+
+# 도메인 범위 검사(설계값: 사실이 아니라 "이 밖이면 사람이 확인"하는 경계). 벗어나면 삭제하지 않고 review_flags에 남긴다.
+ranges:
+  cores: [1, 128]
+  threads: [1, 256]
+  boost_clock_mhz: [1000, 7000]
+  tdp_w: [5, 600]
+  fp32_tflops: [0.5, 200]
+  shader_count: [64, 40000]
+  max_memory_gb: [8, 512]
+  msrp_usd: [30, 5000]
+  total_capacity_gb: [4, 512]
+  median_samples_per_min: [0.001, 100000]
+
+ram:
+  # RAM 노드 = DDR 세대 × 시스템 총용량(사용자 결정). 집합은 설계값.
+  capacities_gb:
+    DDR4: [8, 16, 32, 64, 128]
+    DDR5: [16, 32, 48, 64, 96, 128, 192]
+
+measurements:
+  # 실측 원표본(사용자 업로드)에서 모델별 IQR 밖 표본을 잘라낸 뒤 중앙값을 낸다(잘라낸 수를 기록).
+  iqr_k: 1.5
+  low_n_threshold: 10   # 설계값: 이보다 적으면 low_n_flag
+
+matching:
+  # §7-1 장치명 → 모델 ID 매칭 규칙
+  candidate_score_cap: 0.89     # 유사도 결과는 확정하지 않는다(1.0 불가, 사람이 확인)
+  candidate_min_score: 0.5
+  top_k: 3
+  noise_patterns:               # 정규화 전에 지우는 브랜드 문자열 잡음(정규식, 대소문자 무시)
+    - '\(r\)'
+    - '\(tm\)'
+    - '®'
+    - '™'
+    - '\b\d+-core processor\b'
+    - '\bprocessor\b'
+    - '\bwith radeon graphics\b'
+    - '\b\d+(st|nd|rd|th) gen\b'
+    - '\bcpu @ [\d.]+ ?ghz\b'
+    - '@ ?[\d.]+ ?ghz\b'
+    - '\bgraphics\b'
+  brand_tokens: [nvidia, geforce, amd, radeon, intel, core]
+  distinguishing_words: [ti, super, xt, xtx, x3d, x, k, kf, ks, f, g, gre]
+  glued_suffixes: [xtx, x3d, super, gre, ti, xt, x, kf, ks, k, f, g]   # 코드가 긴 것부터 시도
+  mobile_words: [laptop, mobile, max-q, maxq, notebook]
+  mobile_glued_suffixes: [hx3d, hx, hs, hk, h, u, m, p]
+
+features:
+  # v2 모델 베이스라인 전용 특징 행렬. 공개 CSV에는 적용하지 않는다.
+  categorical: [vendor, category, socket]
+  numeric: [cores, threads, boost_clock_mhz, tdp_w, fp32_tflops, shader_count, msrp_usd]
+
+release:
+  version: "2026.10"
+  dir: release/pccompat-tg-2026.10
+  # linuxhw 관찰 조합은 이 건수 이상 모인 (보드, 칩셋, CPU, RAM 세대)만 공개한다(개별 보고서 재배포 방지)
+  min_observed_reports: 3

@@ -1,0 +1,101 @@
+<!-- out: docs/DATASHEET.md -->
+# PCCompat-TG 데이터 시트 (v2026.10)
+
+> 이 문서는 `docs/templates/DATASHEET.tmpl.md`에서 `uv run python -m pccompat.report`로 생성된다. 직접 고치지 말고 템플릿을 고친다.
+> 수치 뒤 **†** 는 사람 입력 시트가 덜 채워진 상태의 잠정값이다(칩셋 지원 {{sheet_support_done}}/{{sheet_support_total}}행, 검증 표본 {{sheet_verify_done}}/{{sheet_verify_total}}건 입력).
+
+형식: Datasheets for Datasets(Gebru et al., 2021)의 7개 절.
+
+## 1. 동기
+- **목적:** PC 부품 호환 판정은 장착 불가 부품 구매 같은 소비자 피해와 직결되지만, 근거를 추적할 수 있는 공개 호환 데이터셋을 찾지 못했다. 이 데이터셋은 2020-10~2026-10 데스크톱 부품의 호환 관계를 **시간 그래프**로 만들고, **값마다 출처와 출처 등급**을 붙여 공개한다.
+- **연구 질문:** (a) 월별 유효 조합 수 (b) 칩셋별 업그레이드 여지 (c) 출시가 대비 성능 최적선 (d) 스펙 대리 지표와 실측의 순위 일치도
+- **만든 사람:** 저자 1인(개인 연구). 별도 재원 없음.
+
+## 2. 구성
+
+| 표 | 행 수 | 내용 |
+|---|---|---|
+| `parts.csv` | {{n_parts}} | CPU {{n_cpu}}(세대 {{n_cpu_families}}개), GPU {{n_gpu}}(세대 {{n_gpu_families}}개). 필수 값 일부가 빈 행(PARTIAL) {{n_partial}} |
+| `chipsets.csv` | {{n_chipsets}} | 메인보드 칩셋 {{n_chipsets_base}}종(AM4·AM5·LGA1200·LGA1700·LGA1851). DDR4·DDR5를 모두 지원하는 {{n_chipsets_split}}종은 보드가 한 종류만 달므로 보드 메모리별 노드(`board_memory`, 예: `chipset:intel:b760-ddr4`)로 나누고 `base_chipset_id`·`base_name`에 원래 칩셋을 남긴다. 임베디드(E) 칩셋과 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(A300·X300) 제외 |
+| `ram_specs.csv` | {{n_ram}} | DDR 세대 × 용량 규격 |
+| `cpu_chipset_support.csv` | {{n_support}} | 제조사·위키 지원 기록: 지원 {{support_supported}}, 표에 없음 {{support_not_listed}}, 보드마다 다름 {{support_varies}}, 미지원 {{support_unsupported}} |
+| `pair_labels.csv` | {{n_pairs}} | 쌍 호환 라벨(CPU–칩셋 {{pair_cpu_chipset}}, CPU–RAM {{pair_cpu_ram}}, 칩셋–RAM {{pair_chipset_ram}}) |
+| `build_labels.parquet` | {{n_builds}} | 완성 조합(CPU×칩셋×RAM×GPU) 라벨. 시간상 공존 조합 {{n_builds_coexist}} |
+| `perf_blender.csv`, `perf_kishonti.csv` | — | 모델별 실측 중앙값(Blender Open Data, Kishonti GFXBench·CompuBench) |
+| `field_provenance.csv` | {{n_provenance}} | 값마다 출처 URL·등급·확인 여부 |
+| `observed_pairs.csv` | — | linuxhw 보고서에서 관찰된 (CPU, 칩셋)·(CPU, RAM 세대)·(칩셋, RAM 세대) 쌍별 건수 |
+| `observed_combos.csv` | — | 관찰된 (보드, 칩셋, CPU, RAM 세대) 조합별 건수. `chipset_id`는 보드 이름에서 찾은 칩셋(분할 전 ID, `chipsets.csv`의 `base_chipset_id`로 잇는다)이고, 쌍 관찰은 RAM 세대로 보드 메모리 변형에 붙인다. BIOS 정보를 빼고 묶은 뒤 **{{min_observed_reports}}건 이상**인 묶음만 공개(개별 보고서 재배포 방지) |
+| `splits/` | — | 노드·조합 시간 분할, 균형 부분집합 {{balanced_n}}개 |
+
+**GPU 연결 경고(라벨과 별개, v2):** `build_labels`의 `warn_mask`(비트 0 PCIe 대역폭, G2)와 `warn_unchecked_mask`(판단 보류). GPU 슬롯의 실효 PCIe 대역폭(세대 = GPU·CPU·보드 슬롯 중 최소, 레인 = GPU·CPU 중 최소)이 GPU 자체보다 줄고 PCIe 3.0 x8 상당 이하일 때 경고한다. GPU의 PCIe 세대·레인은 위키 표(Bus interface), CPU·칩셋 사양은 사람이 공식 자료로 확인한 `manual/platform_facts.csv` 행만 쓴다. 장착이 FAIL인 조합에는 경고를 달지 않는다. 현재 FAIL이 아닌 공존 조합 {{g_coexist}}개 중 판단 가능 비율은 {{g_pcie_checked_pct}}이고 경고는 {{g_pcie_warn}}개다(인텔 칩셋의 그래픽 슬롯 사양은 아직 확인 전이라 인텔 조합은 판단 보류).
+
+**라벨(3값):** PASS / FAIL / UNKNOWN. UNKNOWN에는 원인을 붙인다: `BIOS_REQUIRED`(BIOS 갱신 필요), `BOARD_DEPENDENT`(같은 칩셋이라도 보드마다 다름), `MISSING`(근거 값 없음), `UNVERIFIED`(미확인).
+
+| 조합 라벨 | 개수 | 비율 |
+|---|---|---|
+| PASS | {{builds_pass}} | {{builds_pass_pct}} |
+| UNKNOWN | {{builds_unknown}} | {{builds_unknown_pct}} |
+| FAIL | {{builds_fail}} | {{builds_fail_pct}} |
+
+UNKNOWN 원인(한 조합에 원인이 여러 개일 수 있음): 보드마다 다름 {{builds_cause_board_dependent}}, 값 없음 {{builds_cause_missing}}, BIOS 필요 {{builds_cause_bios_required}}, 미확인 {{builds_cause_unverified}}.
+
+**결측:** 값을 추정해 채우지 않는다. 출시일 결측 {{n_release_missing}}개, 출시가 결측 {{n_msrp_missing}}개. 판정에 필요한 값이 없으면 UNKNOWN/MISSING이 된다.
+
+**알려진 구조적 한계:** 노드가 보드가 아니라 칩셋 단위다. LGA1700(600·700 시리즈) 칩셋은 DDR4·DDR5 보드가 모두 있어 칩셋–RAM 쌍이 `BOARD_DEPENDENT`가 되고, 이 소켓의 조합은 CPU–칩셋 지원이 확인돼도 PASS가 되지 않는다.
+
+**분할(시간 기준):** train ≤ 2023-06-30 < val ≤ 2024-06-30 < test. CPU는 세대 단위, GPU는 모델 출시일 단위.
+
+| 노드 | train | val | test | 미배정 |
+|---|---|---|---|---|
+| CPU | {{split_cpu_train}} ({{split_cpu_train_pct}}) | {{split_cpu_val}} ({{split_cpu_val_pct}}) | {{split_cpu_test}} ({{split_cpu_test_pct}}) | {{split_cpu_unassigned}} |
+| GPU | {{split_gpu_train}} ({{split_gpu_train_pct}}) | {{split_gpu_val}} ({{split_gpu_val_pct}}) | {{split_gpu_test}} ({{split_gpu_test_pct}}) | {{split_gpu_unassigned}} |
+
+목표 비율(60/15/25)과 다르다. 세대 단위 분할이라 경계를 옮기면 세대가 통째로 넘어가므로 경계를 조정하지 않고 실제 비율을 보고한다. 조합은 구성 노드 중 가장 늦은 분할을 따른다.
+
+**민감 정보:** 없음. 공개 제품 사양과 집계값만 있다. linuxhw 관찰 데이터는 (보드·CPU·RAM) 조합별 건수로만 공개한다.
+
+## 3. 수집 과정
+1. **위키백과:** 공식 API로 목록 문서의 표를 읽어 사실값만 저장한다(표 문구 미저장). 문서 리비전(oldid)을 기록하고, 값 셀·행·열의 각주 URL로 출처 등급을 정한다.
+2. **제조사 공식 페이지:** 사람이 직접 열어 확인한 값만 `OFFICIAL`·verified=true로 기록한다. 수집 프로그램은 쓰지 않는다.
+3. **공개 데이터셋:** Blender Open Data(CC0) 표본 → 모델별 중앙값. Kishonti GFXBench·CompuBench 결과(CC BY 4.0) → 장치별 중앙값. linuxhw(CC BY 4.0) → 캐시 값과 실제 사용 조합 관찰. pci.ids(BSD-3) → 장치 ID 해석.
+4. **라벨:** 규칙 4개(HC-001 소켓, HC-003 칩셋 지원, HC-004 메모리 세대, HC-005 최대 메모리)로 쌍·조합 라벨을 만든다.
+5. **원칙:** robots.txt·약관 준수, 로그인·차단 우회 없음. 제외한 출처(직접 수집하지 않음): TechPowerUp, PassMark, Geekbench, 3DMark, Tom's Hardware, 커뮤니티·쇼핑몰 리뷰.
+6. **상류 출처 공개:** 위키 각주 값 {{n_cited_wiki}}개 중 {{n_upstream_excluded}}개는 각주가 위의 제외 출처를 가리킨다. 그중 TechPowerUp이 {{n_upstream_tpu}}개(부품 {{n_upstream_tpu_parts}}개, 주로 GPU의 클럭·TDP·출시일·출시가·셰이더 수)다. 값은 위키에서 사실값으로만 가져왔지만 계보상 상류는 그 사이트이므로 숨기지 않는다. `field_provenance.csv`의 `source_url`로 걸러 낼 수 있다. 각주가 있다는 것(`CITED`)이 공식 근거를 뜻하지는 않는다.
+
+**출처 등급 분포(값 {{n_provenance}}개, {{n_tiers}}단계):**
+
+| 등급 | 뜻 | 개수 | 비율 |
+|---|---|---|---|
+| OFFICIAL | 사람이 제조사 공식 페이지에서 확인 | {{tier_official}} | {{tier_official_pct}} |
+| WIKIPEDIA_CITED_CELL | 위키 값 셀에 각주 | {{tier_wikipedia_cited_cell}} | {{tier_wikipedia_cited_cell_pct}} |
+| WIKIPEDIA_CITED_ROW | 같은 행에 각주 | {{tier_wikipedia_cited_row}} | {{tier_wikipedia_cited_row_pct}} |
+| WIKIPEDIA_CITED_COLUMN | 열 머리에 각주 | {{tier_wikipedia_cited_column}} | {{tier_wikipedia_cited_column_pct}} |
+| WIKIPEDIA_FAMILY | 문서 단위 세대 출시일 | {{tier_wikipedia_family}} | {{tier_wikipedia_family_pct}} |
+| WIKIPEDIA_UNCITED | 위키 값, 각주 없음 | {{tier_wikipedia_uncited}} | {{tier_wikipedia_uncited_pct}} |
+| OPEN_DATASET | 공개 데이터셋 관찰값 | {{tier_open_dataset}} | {{tier_open_dataset_pct}} |
+| OTHER | 미확인 사전 입력 | {{tier_other}} | {{tier_other_pct}} |
+
+확인된 값(verified=true): {{n_prov_verified}}개. 등급별 정확도는 층화 표본(60건, 등급마다 최소 10건)을 사람이 공식 값과 대조해 Wilson 95% 신뢰구간으로 보고한다: {{verify_summary}}.
+
+## 4. 전처리·정제·라벨링
+- 단위 통일(MHz, W, GB, USD). 출시가는 미국 출시가(MSRP) 1회 값.
+- 범위를 벗어난 값은 지우지 않고 표시한다. 실측 표본만 IQR로 이상치를 제거한다.
+- 장치명 → 모델 ID: 정확·별칭 일치만 자동 확정. 판별 표시(Ti·SUPER·XT·X3D·K·F 등)와 숫자 토큰이 다르면 다른 모델. 노트북·멀티 장치 표기는 제외.
+- 단종일 가정: 모델 단종일 = 그 모델 출시 이후 처음 나온 같은 계열 후속 세대의 첫 출시일(다음 세대 뒤에 나온 리프레시 모델도 판매 구간을 갖도록). 그런 세대가 없으면 분석 창의 끝. 칩셋 단종일 = 다음 소켓 칩셋의 첫 출시일.
+- 재현: `uv run python -m pccompat.run_all`이 전 과정을 다시 돌리고 산출 파일 해시를 `run_manifest.csv`에 남긴다.
+
+## 5. 용도
+- **의도한 용도:** 호환 그래프의 구조·시간 변화 분석, 출시가 대비 성능 분석, 스펙 대리 지표 타당성 검증, 호환 판정 모델 평가(v2).
+- **부적합한 용도:** 개별 구매의 단독 판단 근거(라벨은 공식 문서 기준 판정이며 실제 조립 성공을 보증하지 않는다), 현재 시세 판단(출시가만 있음), 게임 성능 예측(Blender는 렌더링 성능).
+- **주의할 편향:** 단종일 가정으로 월별 조합 수에 급락 구간이 생긴다. Blender·Kishonti는 자발 업로드라 인기 모델에 표본이 몰린다. 칩셋 단위라 보드별 차이를 잃는다.
+
+## 6. 배포
+- GitHub 저장소 + Zenodo DOI(버전 `2026.10`).
+- 형식: CSV(노드·쌍·출처·성능), Parquet(조합), Markdown(이 문서).
+- 라이선스: 데이터 CC BY 4.0, 코드 MIT. 원천 표기는 `THIRD_PARTY_NOTICES.md`(Blender CC0, Kishonti CC BY 4.0 — 저작권자 확인 회신 있음, linuxhw CC BY 4.0, pci.ids BSD-3). 위키백과는 사실값만 쓰고 리비전 링크를 배포한다.
+- 권리자 요청: 어떤 값이 권리를 침해한다고 보는 권리자는 저장소 이슈로 알려 주면 확인 후 해당 값을 지우고 다음 판에 반영한다.
+
+## 7. 유지보수
+- 창구: 저장소 이슈 트래커. 정정은 변경 이력에 기록한다.
+- 갱신: 신제품·지원 문서 갱신을 반영해 `YYYY.MM` 버전을 새로 내고 이전 버전은 보존한다.
+- 외부 기여 값도 `source_url`이 필수이며 검토 후 반영한다.

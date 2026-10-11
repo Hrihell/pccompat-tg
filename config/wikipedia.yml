@@ -1,0 +1,92 @@
+# 위키백과 수집 대상. 사실값만 추출하고 표 문구·형식은 저장하지 않는다(CC BY-SA 동일조건 회피).
+# template: 템플릿 페이지 전체 / section: 페이지 안 절(title·under는 정규식, under는 상위 절 제목)
+# 범위: 2020-10 ~ 2026-10 데스크톱(사용자 결정). 범위 밖 행은 정규화 단계에서 출시일로 거른다.
+
+api: https://en.wikipedia.org/w/api.php
+user_agent: "PCCompat-TG/0.1 (academic dataset research script)"
+min_interval_sec: 1.0
+
+sources:
+  # --- AMD CPU (템플릿)
+  - {id: amd-ryzen-5000, kind: cpu, vendor: AMD, family: Ryzen 5000, template: "Template:AMD Ryzen 5000 Series"}
+  - {id: amd-ryzen-5000g, kind: cpu, vendor: AMD, family: Ryzen 5000G, template: "Template:AMD Ryzen 5000 desktop APUs"}
+  - {id: amd-ryzen-7000, kind: cpu, vendor: AMD, family: Ryzen 7000, template: "Template:AMD Ryzen 7000 Series"}
+  - {id: amd-ryzen-8000g, kind: cpu, vendor: AMD, family: Ryzen 8000G, template: "Template:AMD Ryzen 8000 desktop APUs"}
+  - {id: amd-ryzen-9000, kind: cpu, vendor: AMD, family: Ryzen 9000, template: "Template:AMD Ryzen 9000 Series"}
+  # --- Intel CPU (마이크로아키텍처 문서의 데스크톱 절)
+  - {id: intel-rocket-lake, kind: cpu, vendor: INTEL, family: Core 11th Gen, page: "Rocket Lake", section: {title: "Desktop|Rocket Lake-S"}}
+  - {id: intel-alder-lake, kind: cpu, vendor: INTEL, family: Core 12th Gen, page: "Alder Lake", section: {title: "Desktop|Alder Lake-S"}}
+  - {id: intel-raptor-lake-13, kind: cpu, vendor: INTEL, family: Core 13th Gen, page: "Raptor Lake", section: {title: "^Raptor Lake-S$", under: "13th"}}
+  - {id: intel-raptor-lake-14, kind: cpu, vendor: INTEL, family: Core 14th Gen, page: "Raptor Lake", section: {title: "^Raptor Lake-S Refresh$", under: "14th"}}
+  - {id: intel-arrow-lake, kind: cpu, vendor: INTEL, family: Core Ultra 200S, page: "Arrow Lake (microprocessor)", section: {title: "^Desktop$", under: "^List of Arrow Lake processors$"}}
+  - {id: intel-arrow-lake-refresh, kind: cpu, vendor: INTEL, family: Core Ultra 200S Refresh, page: "Arrow Lake (microprocessor)", section: {title: "^Desktop$", under: "^List of Arrow Lake Refresh processors$"}}
+  # --- GPU (목록 문서의 데스크톱 절)
+  - {id: nvidia-rtx-30, kind: gpu, vendor: NVIDIA, family: GeForce RTX 30, page: "List of Nvidia graphics processing units", section: {title: "^GeForce RTX 30 series$", under: "^Desktop GPUs$"}}
+  - {id: nvidia-rtx-40, kind: gpu, vendor: NVIDIA, family: GeForce RTX 40, page: "List of Nvidia graphics processing units", section: {title: "^GeForce RTX 40 series$", under: "^Desktop GPUs$"}}
+  - {id: nvidia-rtx-50, kind: gpu, vendor: NVIDIA, family: GeForce RTX 50, page: "List of Nvidia graphics processing units", section: {title: "^GeForce RTX 50 series$", under: "^Desktop GPUs$"}}
+  - {id: amd-rx-6000, kind: gpu, vendor: AMD, family: Radeon RX 6000, page: "List of AMD graphics processing units", section: {title: "^Radeon RX 6000 series$"}}
+  - {id: amd-rx-7000, kind: gpu, vendor: AMD, family: Radeon RX 7000, page: "List of AMD graphics processing units", section: {title: "^Radeon RX 7000 series$"}}
+  - {id: amd-rx-9000, kind: gpu, vendor: AMD, family: Radeon RX 9000, page: "List of AMD graphics processing units", section: {title: "RX 9000"}}
+  - {id: intel-arc-a, kind: gpu, vendor: INTEL, family: Arc A, page: "List of Intel graphics processing units", section: {title: "^Desktop$", under: "^Gen 12.7$"}}
+  - {id: intel-arc-b, kind: gpu, vendor: INTEL, family: Arc B, page: "List of Intel graphics processing units", section: {title: "^Desktop$", under: "^Battlemage based$"}}
+  # --- 칩셋
+  - {id: amd-am4-chipsets, kind: chipset, vendor: AMD, family: AM4, page: "List of AMD chipsets", section: {title: "^AM4 chipsets$"}}
+  - {id: amd-am5-chipsets, kind: chipset, vendor: AMD, family: AM5, page: "List of AMD chipsets", section: {title: "^AM5 chipsets$"}}
+  - {id: intel-lga1200-chipsets, kind: chipset, vendor: INTEL, family: LGA 1200, page: "List of Intel chipsets", section: {title: "^LGA 1200$"}}
+  - {id: intel-lga1700-chipsets, kind: chipset, vendor: INTEL, family: LGA 1700, page: "List of Intel chipsets", section: {title: "^LGA 1700$"}}
+  - {id: intel-lga1851-chipsets, kind: chipset, vendor: INTEL, family: LGA 1851, page: "List of Intel chipsets", section: {title: "^LGA 1851$"}}
+
+# 표 머리글 → 스키마 역할(정규식, 대소문자 무시). 표마다 머리글 표기가 달라 여러 형태를 OR로 둔다.
+columns:
+  cpu:
+    brand: '^(branding and model|processor branding|branding)$'      # 첫 번째로 맞는 열
+    model: '^(branding and model|model|sku)$'                          # brand 다음으로 맞는 열
+    cores_threads: '^(cpu / )?cores \( threads \)( / total)?$'
+    p_cores: '^cores \( threads \) / p$'
+    e_cores: '^cores \( threads \) / e$'
+    boost_ghz: 'clock rate \( ?ghz ?\) / (boost|turbo)'
+    tdp: '^(cpu / )?tdp( / base)?$|^power / base$'
+    release: '^(release date|released|launch)$'
+    price: '^(launch )?msrp|^price \(usd\)$'
+    l3: 'l3 cache|smart cache|^cache / l3$'
+    l2: '^cache / l2$'
+    l1: '^cache / l1$'
+  gpu:
+    brand: '^branding and model$'
+    model: '^(model|model \( code name \)|branding and model)$'
+    release: '^(launch date|release date & price|release date|launch)$'
+    price: 'msrp|release date & price'
+    core_config: 'core config|core / config|core / core config'
+    clock: '^clock rate / base|^core / clock|^clock rate \( mhz \)$'
+    fp32_wiki: 'single precision|/ single$|tflops \) / single'
+    tdp: '^(tdp|tbp)'
+    bus: '^bus interface$'
+  chipset:
+    name: '^(model|chipset)$'
+    release: '^release date$'
+
+# 범위 규칙: 리테일 데스크톱만(OEM 전용·콘솔·임베디드 행 제외, 제외 건수는 보고)
+exclude_row_patterns: ['\bOEM\b', 'Steam Machine', '\bPRO\b', 'Embedded']
+# OEM 선출시 뒤 리테일로도 판 행(예: 5600G·5700G 'Apr 13, 2021 (OEM), Aug 5, 2021 (retail)')은 남긴다(사용자 결정 2026-10-10).
+exclude_row_unless: ['\(retail\)']
+exclude_model_patterns: ['-\d{4,5}T?E$']   # 인텔 임베디드(E·TE 접미사)
+# 위키 표에 OEM 표시가 없어 행 규칙에 안 걸린 OEM 전용 APU(5705G/GE·5605G/GE·5305G/GE), 미출시 Core Ultra 3 205T(사용자 결정 2026-10-10).
+exclude_model_patterns_extra: ['^Ryzen \d 5[367]05GE?$', '^Core Ultra 3 205T$']
+
+# 세대 출시일 대체(사용자 결정 2026-10-08 "우선 위키 입력"): 위키 표에 출시일 열이 없는 세대만.
+# 문서 인포박스·본문의 세대 첫 출시일 → precision=FAMILY(개별 모델은 더 늦을 수 있음), tier=WIKIPEDIA_FAMILY.
+# 공식 조회 값(manual/release_dates_todo.csv)이 들어오면 그쪽이 우선한다.
+family_release_fallback:
+  - {family: Core 11th Gen, date: 2021-03-30, page: Rocket Lake, revid: 1359904771,
+     cited_url: "https://videocardz.com/newz/intel-confirms-11th-gen-core-rocket-lake-s-is-set-to-launch-on-march-30",
+     note: "인포박스 produced-start·본문 'sales commencing on March 30'"}
+  - {family: Core 12th Gen, date: 2021-11-04, page: Alder Lake, revid: 1369487491,
+     cited_url: "https://www.anandtech.com/show/16959/intel-innovation-alder-lake-november-4th",
+     note: "인포박스 produced-start(K 모델 기준). 비K 모델은 이후 출시 — FAMILY 정밀도로 표시"}
+
+# 인텔 임베디드 칩셋(이름 끝 E: H610E·Q670E·R680E·H420E·Q470E·W480E) 제외(사용자 결정 2026-10-08, 임베디드 CPU 제외와 일관).
+# AMD의 B650E·X670E·X870E는 'Extreme' 소매 칩셋이라 해당 없음 → 인텔에만 적용.
+# AMD A300·X300(Knoll): 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(DeskMini 등). 조합이 외장 GPU를 전제하므로 범위 밖(사용자 결정 2026-10-10).
+exclude_chipsets:
+  - {vendor: INTEL, pattern: '^[A-Z]\d{3}E$'}
+  - {vendor: AMD, pattern: '^[AX]300$'}

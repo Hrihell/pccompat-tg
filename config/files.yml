@@ -1,0 +1,32 @@
+# 파일 단위 원천. 받을 때마다 sha256·크기·시각을 data/raw/files_manifest.csv에 남긴다(재현성·출처 증빙).
+# license: 우리 산출물에서 지켜야 할 조건은 docs/licenses.md에 정리한다.
+user_agent: "PCCompat-TG/0.1 (academic dataset research script)"
+
+files:
+  - id: getdeploying-gpu-models
+    url: https://getdeploying.com/dataset/gpu-models/gpu-models.csv
+    dest: data/raw/getdeploying/gpu-models.csv
+    license: CC-BY-4.0
+    attribution: "GPU Models dataset by GetDeploying (https://getdeploying.com/dataset/gpu-models), CC BY 4.0"
+  - id: kishonti-gfxbench-5.0
+    url: https://raw.githubusercontent.com/Kishonti-Opensource/GFXBench_and_CompuBench_results/main/GFXBench-5.0-results.csv
+    dest: data/raw/kishonti/GFXBench-5.0-results.csv
+    license: CC-BY-4.0
+    attribution: "GFXBench results snapshot © Kishonti Ltd (https://github.com/Kishonti-Opensource/GFXBench_and_CompuBench_results), CC BY 4.0"
+  - id: kishonti-compubench-2.0-desktop
+    url: https://raw.githubusercontent.com/Kishonti-Opensource/GFXBench_and_CompuBench_results/main/CompuBench-2.0-Desktop-results.csv
+    dest: data/raw/kishonti/CompuBench-2.0-Desktop-results.csv
+    license: CC-BY-4.0
+    attribution: "CompuBench results snapshot © Kishonti Ltd (https://github.com/Kishonti-Opensource/GFXBench_and_CompuBench_results), CC BY 4.0"
+  - id: kishonti-license
+    url: https://raw.githubusercontent.com/Kishonti-Opensource/GFXBench_and_CompuBench_results/main/LICENSE
+    dest: data/raw/kishonti/LICENSE
+    license: (license text)
+    attribution: ""
+  - id: pci-ids
+    url: https://pci-ids.ucw.cz/v2.2/pci.ids
+    dest: data/raw/ids/pci.ids
+    license: BSD-3-Clause (GPL-2.0-or-later 또는 BSD-3 중 BSD-3 선택)
+    attribution: "PCI ID Repository, copyright held by Martin Mares and Albert Pool, BSD-3-Clause"
+# amdgpu.ids(libdrm, MIT): gitlab.freedesktop.org의 robots.txt가 Claude 계열 에이전트를 전면 금지(Disallow: /)한다.
+# → 에이전트·스크립트는 받지 않는다. 필요하면 사람이 브라우저로 받아 data/raw/ids/amdgpu.ids에 둔다.

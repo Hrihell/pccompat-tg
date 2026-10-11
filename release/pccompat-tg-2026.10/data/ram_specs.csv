@@ -1,0 +1,13 @@
+ram_id,ddr_gen,total_capacity_gb,release_date
+ram:ddr4:8gb,DDR4,8,
+ram:ddr4:16gb,DDR4,16,
+ram:ddr4:32gb,DDR4,32,
+ram:ddr4:64gb,DDR4,64,
+ram:ddr4:128gb,DDR4,128,
+ram:ddr5:16gb,DDR5,16,
+ram:ddr5:32gb,DDR5,32,
+ram:ddr5:48gb,DDR5,48,
+ram:ddr5:64gb,DDR5,64,
+ram:ddr5:96gb,DDR5,96,
+ram:ddr5:128gb,DDR5,128,
+ram:ddr5:192gb,DDR5,192,
