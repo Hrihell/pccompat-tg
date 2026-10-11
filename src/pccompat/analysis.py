@@ -21,6 +21,9 @@ from pccompat.config import PROJECT_ROOT, load_config
 OUT = PROJECT_ROOT / "data" / "out"
 AN = OUT / "analysis"
 FIG = OUT / "figures"
+# 논문 2단 폭(91.5mm = 3.6in)에 1:1로 넣는 그림. 양식 규정(글자 9pt 이상)을 그림 안 글자에도 맞춘다.
+PAPER_FIG_WIDTH_IN = 3.6
+PAPER_FIG_FONT_PT = 9
 
 
 def months(start: str, end: str) -> pd.DatetimeIndex:
@@ -195,16 +198,18 @@ def upgrade_groups(upg: pd.DataFrame) -> pd.DataFrame:
 
 def _upgrade_figure(plt, upg: pd.DataFrame) -> None:
     g = upgrade_groups(upg)
-    fig, ax = plt.subplots(figsize=(3.4, 1.9))
+    fig, ax = plt.subplots(figsize=(PAPER_FIG_WIDTH_IN, 2.3))
     for i, r in g.iterrows():
         ax.barh(i, r["last_cpu"] - r["first_cpu"], left=r["first_cpu"], height=0.6, color=f"C{i}")
-        ax.text(r["last_cpu"], i, f" {int(r['n_cpu_families_pass'])} gen, {r['span_months']:.1f} mo",
-                va="center", fontsize=6)
+        ax.text(r["last_cpu"], i, f" {int(r['n_cpu_families_pass'])} gen",
+                va="center", fontsize=PAPER_FIG_FONT_PT)
     labels = [f"{r.family} ({r.n_chipsets}/{r.n_total})" for r in g.itertuples()]
-    ax.set_yticks(range(len(g)), labels, fontsize=6); ax.invert_yaxis()
-    ax.tick_params(axis="x", labelsize=6)
-    ax.set_xlim(pd.Timestamp("2020-07-01"), pd.Timestamp("2029-03-31"))
-    ax.set_xlabel("release of first / last PASS CPU", fontsize=6)
+    ax.set_yticks(range(len(g)), labels, fontsize=PAPER_FIG_FONT_PT); ax.invert_yaxis()
+    ax.tick_params(axis="x", labelsize=PAPER_FIG_FONT_PT)
+    ax.set_xlim(pd.Timestamp("2020-07-01"), pd.Timestamp("2028-12-31"))
+    years = range(2021, 2029, 2)  # 9pt에서 매년 눈금은 겹친다
+    ax.set_xticks([pd.Timestamp(f"{y}-01-01") for y in years], [f"'{y % 100:02d}" for y in years])
+    ax.set_xlabel("release of first / last PASS CPU", fontsize=PAPER_FIG_FONT_PT)
     fig.tight_layout(); fig.savefig(FIG / "b_upgrade.png", dpi=300); plt.close(fig)
 
 
