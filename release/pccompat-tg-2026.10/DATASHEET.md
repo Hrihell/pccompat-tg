@@ -1,7 +1,7 @@
 # PCCompat-TG 데이터 시트 (v2026.10)
 
 > 이 문서는 `docs/templates/DATASHEET.tmpl.md`에서 `uv run python -m pccompat.report`로 생성된다. 직접 고치지 말고 템플릿을 고친다.
-> 수치 뒤 **†** 는 사람 입력 시트가 덜 채워진 상태의 잠정값이다(칩셋 지원 37/37행, 검증 표본 60/60건 입력).
+> 수치 뒤 **†** 는 사람 입력 시트가 덜 채워진 상태의 잠정값이다(칩셋 지원 76/76행, 검증 표본 60/60건 입력).
 
 형식: Datasheets for Datasets(Gebru et al., 2021)의 7개 절.
 
@@ -15,28 +15,28 @@
 | 표 | 행 수 | 내용 |
 |---|---|---|
 | `parts.csv` | 243 | CPU 174(세대 11개), GPU 69(세대 8개). 필수 값 일부가 빈 행(PARTIAL) 10 |
-| `chipsets.csv` | 53 | 메인보드 칩셋 44종(AM4·AM5·LGA1200·LGA1700·LGA1851). DDR4·DDR5를 모두 지원하는 9종은 보드가 한 종류만 달므로 보드 메모리별 노드(`board_memory`, 예: `chipset:intel:b760-ddr4`)로 나누고 `base_chipset_id`·`base_name`에 원래 칩셋을 남긴다. 임베디드(E) 칩셋과 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(A300·X300) 제외 |
+| `chipsets.csv` | 52 | 메인보드 칩셋 43종(AM4·AM5·LGA1200·LGA1700·LGA1851). DDR4·DDR5를 모두 지원하는 9종은 보드가 한 종류만 달므로 보드 메모리별 노드(`board_memory`, 예: `chipset:intel:b760-ddr4`)로 나누고 `base_chipset_id`·`base_name`에 원래 칩셋을 남긴다. 임베디드(E) 칩셋과 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(A300·X300), AMD가 이들과 같은 소형 폼팩터 묶음으로 소개하는 Pro 500 제외 |
 | `ram_specs.csv` | 12 | DDR 세대 × 용량 규격 |
-| `cpu_chipset_support.csv` | 2,295 | 제조사·위키 지원 기록: 지원 2,053, 표에 없음 108, 보드마다 다름 48, 미지원 38 |
-| `pair_labels.csv` | 11,946 | 쌍 호환 라벨(CPU–칩셋 9,222, CPU–RAM 2,088, 칩셋–RAM 636) |
-| `build_labels.parquet` | 7,635,816 | 완성 조합(CPU×칩셋×RAM×GPU) 라벨. 시간상 공존 조합 1,332,480 |
+| `cpu_chipset_support.csv` | 2,275 | 제조사·위키 지원 기록: 지원 1,897, 표에 없음 108, 보드마다 다름 0, 미지원 38 |
+| `pair_labels.csv` | 11,760 | 쌍 호환 라벨(CPU–칩셋 9,048, CPU–RAM 2,088, 칩셋–RAM 624) |
+| `build_labels.parquet` | 7,491,744 | 완성 조합(CPU×칩셋×RAM×GPU) 라벨. 시간상 공존 조합 1,765,116 |
 | `perf_blender.csv`, `perf_kishonti.csv` | — | 모델별 실측 중앙값(Blender Open Data, Kishonti GFXBench·CompuBench) |
-| `field_provenance.csv` | 2,578 | 값마다 출처 URL·등급·확인 여부 |
+| `field_provenance.csv` | 2,575 | 값마다 출처 URL·등급·확인 여부 |
 | `observed_pairs.csv` | — | linuxhw 보고서에서 관찰된 (CPU, 칩셋)·(CPU, RAM 세대)·(칩셋, RAM 세대) 쌍별 건수 |
 | `observed_combos.csv` | — | 관찰된 (보드, 칩셋, CPU, RAM 세대) 조합별 건수. `chipset_id`는 보드 이름에서 찾은 칩셋(분할 전 ID, `chipsets.csv`의 `base_chipset_id`로 잇는다)이고, 쌍 관찰은 RAM 세대로 보드 메모리 변형에 붙인다. BIOS 정보를 빼고 묶은 뒤 **3건 이상**인 묶음만 공개(개별 보고서 재배포 방지) |
 | `splits/` | — | 노드·조합 시간 분할, 균형 부분집합 30,000개 |
 
-**GPU 연결 경고(라벨과 별개, v2):** `build_labels`의 `warn_mask`(비트 0 PCIe 대역폭, G2)와 `warn_unchecked_mask`(판단 보류). GPU 슬롯의 실효 PCIe 대역폭(세대 = GPU·CPU·보드 슬롯 중 최소, 레인 = GPU·CPU 중 최소)이 GPU 자체보다 줄고 PCIe 3.0 x8 상당 이하일 때 경고한다. GPU의 PCIe 세대·레인은 위키 표(Bus interface), CPU·칩셋 사양은 사람이 공식 자료로 확인한 `manual/platform_facts.csv` 행만 쓴다. 장착이 FAIL인 조합에는 경고를 달지 않는다. 현재 FAIL이 아닌 공존 조합 315,624개 중 판단 가능 비율은 22.0%이고 경고는 1,715개다(인텔 칩셋의 그래픽 슬롯 사양은 아직 확인 전이라 인텔 조합은 판단 보류).
+**GPU 연결 경고(라벨과 별개, v2):** `build_labels`의 `warn_mask`(비트 0 PCIe 대역폭, G2)와 `warn_unchecked_mask`(판단 보류). GPU 슬롯의 실효 PCIe 대역폭(세대 = GPU·CPU·보드 슬롯 중 최소, 레인 = GPU·CPU 중 최소)이 GPU 자체보다 줄고 PCIe 3.0 x8 상당 이하일 때 경고한다. GPU의 PCIe 세대·레인은 위키 표(Bus interface), CPU·칩셋 사양은 사람이 공식 자료로 확인한 `manual/platform_facts.csv` 행만 쓴다. 장착이 FAIL인 조합에는 경고를 달지 않는다. 현재 FAIL이 아닌 공존 조합 314,634개 중 판단 가능 비율은 21.8%이고 경고는 1,470개다(인텔 칩셋의 그래픽 슬롯 사양은 아직 확인 전이라 인텔 조합은 판단 보류).
 
 **라벨(3값):** PASS / FAIL / UNKNOWN. UNKNOWN에는 원인을 붙인다: `BIOS_REQUIRED`(BIOS 갱신 필요), `BOARD_DEPENDENT`(같은 칩셋이라도 보드마다 다름), `MISSING`(근거 값 없음), `UNVERIFIED`(미확인).
 
 | 조합 라벨 | 개수 | 비율 |
 |---|---|---|
-| PASS | 830,208 | 10.9% |
-| UNKNOWN | 77,556 | 1.0% |
-| FAIL | 6,728,052 | 88.1% |
+| PASS | 757,620 | 10.1% |
+| UNKNOWN | 143,244 | 1.9% |
+| FAIL | 6,590,880 | 88.0% |
 
-UNKNOWN 원인(한 조합에 원인이 여러 개일 수 있음): 보드마다 다름 16,560, 값 없음 55,476, BIOS 필요 16,560, 미확인 0.
+UNKNOWN 원인(한 조합에 원인이 여러 개일 수 있음): 보드마다 다름 0, 값 없음 54,096, BIOS 필요 93,288, 미확인 0.
 
 **결측:** 값을 추정해 채우지 않는다. 출시일 결측 0개, 출시가 결측 17개. 판정에 필요한 값이 없으면 UNKNOWN/MISSING이 된다.
 
@@ -59,28 +59,28 @@ UNKNOWN 원인(한 조합에 원인이 여러 개일 수 있음): 보드마다 �
 3. **공개 데이터셋:** Blender Open Data(CC0) 표본 → 모델별 중앙값. Kishonti GFXBench·CompuBench 결과(CC BY 4.0) → 장치별 중앙값. linuxhw(CC BY 4.0) → 캐시 값과 실제 사용 조합 관찰. pci.ids(BSD-3) → 장치 ID 해석.
 4. **라벨:** 규칙 4개(HC-001 소켓, HC-003 칩셋 지원, HC-004 메모리 세대, HC-005 최대 메모리)로 쌍·조합 라벨을 만든다.
 5. **원칙:** robots.txt·약관 준수, 로그인·차단 우회 없음. 제외한 출처(직접 수집하지 않음): TechPowerUp, PassMark, Geekbench, 3DMark, Tom's Hardware, 커뮤니티·쇼핑몰 리뷰.
-6. **상류 출처 공개:** 위키 각주 값 564개 중 366개는 각주가 위의 제외 출처를 가리킨다. 그중 TechPowerUp이 348개(부품 50개, 주로 GPU의 클럭·TDP·출시일·출시가·셰이더 수)다. 값은 위키에서 사실값으로만 가져왔지만 계보상 상류는 그 사이트이므로 숨기지 않는다. `field_provenance.csv`의 `source_url`로 걸러 낼 수 있다. 각주가 있다는 것(`CITED`)이 공식 근거를 뜻하지는 않는다.
+6. **상류 출처 공개:** 위키 각주 값 563개 중 366개는 각주가 위의 제외 출처를 가리킨다. 그중 TechPowerUp이 348개(부품 50개, 주로 GPU의 클럭·TDP·출시일·출시가·셰이더 수)다. 값은 위키에서 사실값으로만 가져왔지만 계보상 상류는 그 사이트이므로 숨기지 않는다. `field_provenance.csv`의 `source_url`로 걸러 낼 수 있다. 각주가 있다는 것(`CITED`)이 공식 근거를 뜻하지는 않는다.
 
-**출처 등급 분포(값 2,578개, 8단계):**
+**출처 등급 분포(값 2,575개, 8단계):**
 
 | 등급 | 뜻 | 개수 | 비율 |
 |---|---|---|---|
-| OFFICIAL | 사람이 제조사 공식 페이지에서 확인 | 670 | 26.0% |
-| WIKIPEDIA_CITED_CELL | 위키 값 셀에 각주 | 27 | 1.0% |
-| WIKIPEDIA_CITED_ROW | 같은 행에 각주 | 537 | 20.8% |
+| OFFICIAL | 사람이 제조사 공식 페이지에서 확인 | 668 | 25.9% |
+| WIKIPEDIA_CITED_CELL | 위키 값 셀에 각주 | 26 | 1.0% |
+| WIKIPEDIA_CITED_ROW | 같은 행에 각주 | 537 | 20.9% |
 | WIKIPEDIA_CITED_COLUMN | 열 머리에 각주 | 0 | 0.0% |
 | WIKIPEDIA_FAMILY | 문서 단위 세대 출시일 | 0 | 0.0% |
 | WIKIPEDIA_UNCITED | 위키 값, 각주 없음 | 1,160 | 45.0% |
 | OPEN_DATASET | 공개 데이터셋 관찰값 | 184 | 7.1% |
 | OTHER | 미확인 사전 입력 | 0 | 0.0% |
 
-확인된 값(verified=true): 670개. 등급별 정확도는 층화 표본(60건, 등급마다 최소 10건)을 사람이 공식 값과 대조해 Wilson 95% 신뢰구간으로 보고한다: WIKIPEDIA_CITED_CELL 7/7 (1.00, 0.65–1.00); WIKIPEDIA_CITED_ROW 15/15 (1.00, 0.80–1.00); WIKIPEDIA_FAMILY 5/10 (0.50, 0.24–0.76); WIKIPEDIA_UNCITED 17/18 (0.94, 0.74–0.99) (공식 값을 찾지 못한 10건 제외).
+확인된 값(verified=true): 668개. 등급별 정확도는 층화 표본(60건, 등급마다 최소 10건)을 사람이 공식 값과 대조해 Wilson 95% 신뢰구간으로 보고한다: WIKIPEDIA_CITED_CELL 7/7 (1.00, 0.65–1.00); WIKIPEDIA_CITED_ROW 15/15 (1.00, 0.80–1.00); WIKIPEDIA_FAMILY 5/10 (0.50, 0.24–0.76); WIKIPEDIA_UNCITED 17/18 (0.94, 0.74–0.99) (공식 값을 찾지 못한 10건 제외).
 
 ## 4. 전처리·정제·라벨링
 - 단위 통일(MHz, W, GB, USD). 출시가는 미국 출시가(MSRP) 1회 값.
 - 범위를 벗어난 값은 지우지 않고 표시한다. 실측 표본만 IQR로 이상치를 제거한다.
 - 장치명 → 모델 ID: 정확·별칭 일치만 자동 확정. 판별 표시(Ti·SUPER·XT·X3D·K·F 등)와 숫자 토큰이 다르면 다른 모델. 노트북·멀티 장치 표기는 제외.
-- 단종일 가정: 모델 단종일 = 그 모델 출시 이후 처음 나온 같은 계열 후속 세대의 첫 출시일(다음 세대 뒤에 나온 리프레시 모델도 판매 구간을 갖도록). 그런 세대가 없으면 분석 창의 끝. 칩셋 단종일 = 다음 소켓 칩셋의 첫 출시일.
+- 단종일 가정: 모델 단종일 = 그 모델 출시 이후 처음 나온 같은 계열 후속 세대의 첫 출시일(다음 세대 뒤에 나온 리프레시 모델도 판매 구간을 갖도록). 그런 세대가 없으면 분석 창의 끝. 칩셋 단종일 = 다음 소켓 칩셋의 첫 출시일. 다만 인텔 칩셋 13종은 인텔 제품 단종 공지(PCN)의 최종 출하일을 쓴다(`eol_is_assumed=False`). 가정값은 `chipsets.csv`의 `eol_assumed_date`에 남긴다(공식 값과의 차이: 중앙값 28.7개월).
 - 재현: `uv run python -m pccompat.run_all`이 전 과정을 다시 돌리고 산출 파일 해시를 `run_manifest.csv`에 남긴다.
 
 ## 5. 용도

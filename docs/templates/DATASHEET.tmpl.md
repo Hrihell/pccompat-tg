@@ -16,7 +16,7 @@
 | 표 | 행 수 | 내용 |
 |---|---|---|
 | `parts.csv` | {{n_parts}} | CPU {{n_cpu}}(세대 {{n_cpu_families}}개), GPU {{n_gpu}}(세대 {{n_gpu_families}}개). 필수 값 일부가 빈 행(PARTIAL) {{n_partial}} |
-| `chipsets.csv` | {{n_chipsets}} | 메인보드 칩셋 {{n_chipsets_base}}종(AM4·AM5·LGA1200·LGA1700·LGA1851). DDR4·DDR5를 모두 지원하는 {{n_chipsets_split}}종은 보드가 한 종류만 달므로 보드 메모리별 노드(`board_memory`, 예: `chipset:intel:b760-ddr4`)로 나누고 `base_chipset_id`·`base_name`에 원래 칩셋을 남긴다. 임베디드(E) 칩셋과 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(A300·X300) 제외 |
+| `chipsets.csv` | {{n_chipsets}} | 메인보드 칩셋 {{n_chipsets_base}}종(AM4·AM5·LGA1200·LGA1700·LGA1851). DDR4·DDR5를 모두 지원하는 {{n_chipsets_split}}종은 보드가 한 종류만 달므로 보드 메모리별 노드(`board_memory`, 예: `chipset:intel:b760-ddr4`)로 나누고 `base_chipset_id`·`base_name`에 원래 칩셋을 남긴다. 임베디드(E) 칩셋과 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(A300·X300), AMD가 이들과 같은 소형 폼팩터 묶음으로 소개하는 Pro 500 제외 |
 | `ram_specs.csv` | {{n_ram}} | DDR 세대 × 용량 규격 |
 | `cpu_chipset_support.csv` | {{n_support}} | 제조사·위키 지원 기록: 지원 {{support_supported}}, 표에 없음 {{support_not_listed}}, 보드마다 다름 {{support_varies}}, 미지원 {{support_unsupported}} |
 | `pair_labels.csv` | {{n_pairs}} | 쌍 호환 라벨(CPU–칩셋 {{pair_cpu_chipset}}, CPU–RAM {{pair_cpu_ram}}, 칩셋–RAM {{pair_chipset_ram}}) |
@@ -81,7 +81,7 @@ UNKNOWN 원인(한 조합에 원인이 여러 개일 수 있음): 보드마다 �
 - 단위 통일(MHz, W, GB, USD). 출시가는 미국 출시가(MSRP) 1회 값.
 - 범위를 벗어난 값은 지우지 않고 표시한다. 실측 표본만 IQR로 이상치를 제거한다.
 - 장치명 → 모델 ID: 정확·별칭 일치만 자동 확정. 판별 표시(Ti·SUPER·XT·X3D·K·F 등)와 숫자 토큰이 다르면 다른 모델. 노트북·멀티 장치 표기는 제외.
-- 단종일 가정: 모델 단종일 = 그 모델 출시 이후 처음 나온 같은 계열 후속 세대의 첫 출시일(다음 세대 뒤에 나온 리프레시 모델도 판매 구간을 갖도록). 그런 세대가 없으면 분석 창의 끝. 칩셋 단종일 = 다음 소켓 칩셋의 첫 출시일.
+- 단종일 가정: 모델 단종일 = 그 모델 출시 이후 처음 나온 같은 계열 후속 세대의 첫 출시일(다음 세대 뒤에 나온 리프레시 모델도 판매 구간을 갖도록). 그런 세대가 없으면 분석 창의 끝. 칩셋 단종일 = 다음 소켓 칩셋의 첫 출시일. 다만 인텔 칩셋 {{v_eol_official_n}}종은 인텔 제품 단종 공지(PCN)의 최종 출하일을 쓴다(`eol_is_assumed=False`). 가정값은 `chipsets.csv`의 `eol_assumed_date`에 남긴다(공식 값과의 차이: 중앙값 {{v_eol_err_median_mo}}개월).
 - 재현: `uv run python -m pccompat.run_all`이 전 과정을 다시 돌리고 산출 파일 해시를 `run_manifest.csv`에 남긴다.
 
 ## 5. 용도

@@ -43,3 +43,25 @@ def test_pair_row_never_keeps_an_inverted_interval():
     assert row["valid_from"] is None and row["valid_to"] is None
     ok = labels._row("CPU_RAM", "cpu:a", "ram:b", v, pd.Timestamp("2022-01-01"), pd.Timestamp("2022-09-27"), False)
     assert (ok["valid_from"], ok["valid_to"]) == ("2022-01-01", "2022-09-27")
+
+
+def test_cpu_chipset_basis_is_verified_only_for_socket_fail_or_checked_support(monkeypatch):
+    """같은 소켓의 FAIL(미지원)은 지원 근거가 검증됐을 때만 basis_verified. 소켓 불일치 FAIL은 지원 근거가 필요 없다."""
+    from pccompat import labels
+    monkeypatch.setattr(labels, "_verified_families", lambda: {"cpuF", "chipF"})
+    parts = pd.DataFrame([{"part_id": "cpu-1", "category": "CPU", "socket": "LGA1200", "family": "cpuF",
+                           "release_date": "2021-03-01", "eol_date": None, "memory_gens": "DDR4", "max_memory_gb": 128}])
+    chips = pd.DataFrame([
+        {"chipset_id": "b460", "socket": "LGA1200", "family": "chipF", "release_date": "2020-05-01", "eol_date": None},
+        {"chipset_id": "b560", "socket": "LGA1200", "family": "chipF", "release_date": "2021-03-01", "eol_date": None},
+        {"chipset_id": "x570", "socket": "AM4", "family": "chipF", "release_date": "2019-07-01", "eol_date": None}])
+    support = pd.DataFrame([{"cpu_id": "cpu-1", "chipset_id": "b460", "support": "UNSUPPORTED", "verified": False},
+                            {"cpu_id": "cpu-1", "chipset_id": "b560", "support": "UNSUPPORTED", "verified": True}])
+    rams = pd.DataFrame(columns=["ram_id", "ddr_gen", "total_capacity_gb"])
+
+    out = labels.pair_labels(parts, chips, rams, support, {"window": {"end": "2026-10-01"}})
+
+    got = out[out["edge_type"] == "CPU_CHIPSET"].set_index("dst")[["label", "basis_verified"]]
+    assert tuple(got.loc["b460"]) == ("FAIL", False)  # 위키 근거 미지원
+    assert tuple(got.loc["b560"]) == ("FAIL", True)
+    assert tuple(got.loc["x570"]) == ("FAIL", True)   # 소켓 불일치

@@ -100,6 +100,7 @@ CHIPSETS = Table(
         Column("release_date", "date", required=True),
         Column("eol_date", "date"),
         Column("eol_is_assumed", "bool"),
+        Column("eol_assumed_date", "date"),  # 가정 단종일(다음 소켓 출시). 공식 단종일로 바뀐 칩셋도 오차 계산용으로 남긴다
         Column("record_status", "enum", allowed=("COMPLETE", "PARTIAL")),
         # 보드 메모리 분할(v2): DDR4·DDR5 겸용 칩셋은 보드 메모리 종류별 노드로 나뉜다. 나뉘지 않은 칩셋은 board_memory가 비고
         # base_chipset_id·base_name이 자기 자신이다.

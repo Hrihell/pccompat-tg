@@ -1,9 +1,13 @@
 src,dst,unknown_cause,n_observed
+cpu:amd:ryzen-9-9950x,chipset:amd:x670e,BIOS_REQUIRED,10.0
 cpu:intel:core-i9-14900ks,chipset:intel:z790,MISSING,7.0
-cpu:amd:ryzen-5-5500gt,chipset:amd:b550,BOARD_DEPENDENT,4.0
-cpu:amd:ryzen-5-5600gt,chipset:amd:b550,BOARD_DEPENDENT,4.0
 cpu:amd:ryzen-5-5600x,chipset:amd:b350,BIOS_REQUIRED,4.0
 cpu:amd:ryzen-7-5700x,chipset:amd:x370,BIOS_REQUIRED,4.0
+cpu:amd:ryzen-7-9700x,chipset:amd:b650,BIOS_REQUIRED,4.0
+cpu:intel:core-i5-11400,chipset:intel:z490,BIOS_REQUIRED,4.0
+cpu:intel:core-i7-11700k,chipset:intel:z490,BIOS_REQUIRED,4.0
 cpu:amd:ryzen-5-5600x,chipset:amd:a320,BIOS_REQUIRED,3.0
 cpu:amd:ryzen-5-5600x,chipset:amd:x370,BIOS_REQUIRED,3.0
+cpu:amd:ryzen-7-9700x,chipset:amd:b650e,BIOS_REQUIRED,3.0
+cpu:amd:ryzen-9-9950x,chipset:amd:b650e,BIOS_REQUIRED,3.0
 cpu:intel:core-i9-12900ks,chipset:intel:z790,MISSING,3.0

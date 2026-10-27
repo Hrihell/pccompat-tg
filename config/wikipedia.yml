@@ -87,6 +87,7 @@ family_release_fallback:
 # 인텔 임베디드 칩셋(이름 끝 E: H610E·Q670E·R680E·H420E·Q470E·W480E) 제외(사용자 결정 2026-10-08, 임베디드 CPU 제외와 일관).
 # AMD의 B650E·X670E·X870E는 'Extreme' 소매 칩셋이라 해당 없음 → 인텔에만 적용.
 # AMD A300·X300(Knoll): 외장 GPU 슬롯이 없는 APU 전용 미니 PC 플랫폼(DeskMini 등). 조합이 외장 GPU를 전제하므로 범위 밖(사용자 결정 2026-10-10).
+# AMD Pro 500: AMD AM4 칩셋 페이지가 X300·A300과 같은 '가장 작은 폼팩터용, 프로세서 직결' 묶음으로 소개 → 같은 기준으로 범위 밖(사용자 결정 2026-10-27).
 exclude_chipsets:
   - {vendor: INTEL, pattern: '^[A-Z]\d{3}E$'}
-  - {vendor: AMD, pattern: '^[AX]300$'}
+  - {vendor: AMD, pattern: '^([AX]300|Pro 500)$'}

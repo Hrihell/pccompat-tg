@@ -27,6 +27,55 @@ def test_uarch_todo_keeps_rows_the_user_already_filled(tmp_path, monkeypatch):
     assert sheet.loc[sheet["chipset"] == "B760", "support"].iloc[0] == ""
 
 
+def test_uarch_todo_lists_wikipedia_cells_for_official_check(tmp_path, monkeypatch):
+    """위키 칩셋 표에서 온 칸도 사람이 공식 페이지로 확인할 대상이다. 위키 값은 참고 열에만 두고 support는 비운다."""
+    monkeypatch.setattr(assemble, "MANUAL", tmp_path)
+    pd.DataFrame([{"family": "Ryzen 7000", "kind": "cpu", "uarch": "Zen 4"}]).to_csv(
+        tmp_path / "family_facts.csv", index=False)
+    parts = pd.DataFrame([{"part_id": "cpu-1", "family": "Ryzen 7000"}, {"part_id": "cpu-2", "family": "Ryzen 7000"}])
+    chips = pd.DataFrame([{"chipset_id": "c-b650", "name": "B650"}])
+    support = pd.DataFrame([
+        {"cpu_id": c, "chipset_id": "c-b650", "support": "SUPPORTED", "origin": "WIKIPEDIA"} for c in ["cpu-1", "cpu-2"]])
+
+    n = assemble.write_uarch_todo(support, parts, chips)
+    n_again = assemble.write_uarch_todo(support, parts, chips)  # 다시 돌려도 참고 열이 겹치지 않아야 한다
+
+    sheet = pd.read_csv(tmp_path / "chipset_support_by_uarch.csv", dtype=str, keep_default_na=False)
+    assert n == n_again == 1
+    row = sheet.iloc[0]
+    assert (row["uarch"], row["chipset"], row["n_cpus"]) == ("Zen 4", "B650", "2")
+    assert row["support"] == ""
+    assert row["wiki_support"] == "SUPPORTED"
+    assert not any(c.endswith(("_x", "_y")) for c in sheet.columns)
+
+
+def test_official_eol_overrides_assumed_date_only_when_verified():
+    chips = pd.DataFrame({"name": ["B550", "X570", "A520"],
+                          "eol_date": pd.to_datetime(["2022-09-27"] * 3), "eol_is_assumed": [True, True, True]})
+    sheet = pd.DataFrame([
+        {"chipset": "B550", "eol_date": "2024-06-30", "source_url": "https://x", "verified": "true", "note": ""},
+        {"chipset": "X570", "eol_date": "2023-01-01", "source_url": "https://y", "verified": "false", "note": ""}])
+
+    out = assemble.apply_official_eol(chips, sheet)
+
+    b550, x570, a520 = (out[out["name"] == n].iloc[0] for n in ("B550", "X570", "A520"))
+    assert b550["eol_date"] == pd.Timestamp("2024-06-30") and not b550["eol_is_assumed"]
+    assert b550["eol_assumed_date"] == pd.Timestamp("2022-09-27")  # 가정값은 오차 계산용으로 남긴다
+    assert x570["eol_date"] == pd.Timestamp("2022-09-27") and x570["eol_is_assumed"]  # 미검증 행은 무시
+    assert a520["eol_assumed_date"] == pd.Timestamp("2022-09-27")
+
+
+def test_official_eol_sheet_with_only_unverified_rows_changes_nothing():
+    chips = pd.DataFrame({"name": ["B460"], "eol_date": pd.to_datetime(["2021-01-01"]).astype("datetime64[s]"),
+                          "eol_is_assumed": [True]})
+    sheet = pd.DataFrame([{"chipset": "B460", "eol_date": "2021-12-24", "source_url": "https://x", "verified": "false",
+                           "note": ""}])
+
+    out = assemble.apply_official_eol(chips, sheet)
+
+    assert out["eol_date"].iloc[0] == pd.Timestamp("2021-01-01") and bool(out["eol_is_assumed"].iloc[0])
+
+
 def test_per_cpu_sheet_false_string_becomes_false(tmp_path, monkeypatch):
     monkeypatch.setattr(assemble, "MANUAL", tmp_path)
     monkeypatch.setattr(assemble, "wiki_support_matrix", lambda: pd.DataFrame(columns=["uarch", "chipset", "support", "url", "support_text"]))

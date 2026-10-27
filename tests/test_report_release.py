@@ -9,6 +9,22 @@ def test_render_fills_keys_and_formats_ints():
     assert out == "PASS 222,525 / ρ 0.855"
 
 
+def test_sheet_status_counts_wiki_backed_cells_separately(tmp_path, monkeypatch):
+    """위키 값이 있는 칸은 라벨이 이미 정해져 있어 '미입력'이 아니다(숫자에 잠정 표시를 붙이지 않음). 공식 확인 대기는 따로 센다."""
+    monkeypatch.setattr(report, "MANUAL", tmp_path)
+    pd.DataFrame([{"support": "SUPPORTED", "wiki_support": ""}, {"support": "", "wiki_support": ""},
+                  {"support": "", "wiki_support": "SUPPORTED"}]).to_csv(tmp_path / "chipset_support_by_uarch.csv", index=False)
+    pd.DataFrame([{"match": "true"}]).to_csv(tmp_path / "verification_sample.csv", index=False)
+    pd.DataFrame([{"release_date": "2021-01-01"}]).to_csv(tmp_path / "release_dates_todo.csv", index=False)
+    pd.DataFrame([{"l3_cache_mb": "32"}]).to_csv(tmp_path / "cache_todo.csv", index=False)
+    pd.DataFrame([{"verified": "true"}]).to_csv(tmp_path / "family_facts.csv", index=False)
+
+    s = report.sheet_status()
+
+    assert (s["sheet_support_done"], s["sheet_support_total"]) == (1, 2)
+    assert s["sheet_support_wiki_open"] == 1
+
+
 def test_render_marks_sheet_dependent_numbers_when_pending():
     nums = {"builds_pass": 10, "n_parts": 247, "pending_sheets": True}
     assert report.render("{{builds_pass}} {{n_parts}}", nums) == "10† 247"

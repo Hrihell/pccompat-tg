@@ -10,7 +10,6 @@ chipset:amd:b650,train
 chipset:amd:b650e,train
 chipset:amd:b840,train
 chipset:amd:b850,train
-chipset:amd:pro-500,train
 chipset:amd:x370,train
 chipset:amd:x470,train
 chipset:amd:x570,train

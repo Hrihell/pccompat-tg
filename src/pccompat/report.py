@@ -19,7 +19,8 @@ import pandas as pd
 from pccompat.config import PROJECT_ROOT, load_config
 from pccompat.labels import CAUSES
 from pccompat.quality import accuracy_by_tier
-from pccompat import paper_stats
+from pccompat import paper_stats, validation_stats
+from pccompat.analysis import _cpu_chipset_by_base
 from pccompat.schema import CPU_CHIPSET_SUPPORT, LABELS, PAIR_LABELS, SOURCE_TIERS
 
 OUT = PROJECT_ROOT / "data" / "out"
@@ -58,6 +59,13 @@ def sheet_status() -> dict[str, Any]:
                              "cache": ("cache_todo.csv", "l3_cache_mb")}.items():
         done, total = _filled(MANUAL / name, col)
         s[f"sheet_{key}_done"], s[f"sheet_{key}_total"] = done, total
+    # 위키 값이 있는 빈칸은 라벨이 이미 정해져 있으므로 미입력으로 치지 않고, 공식 확인 대기로 따로 센다
+    sup = pd.read_csv(MANUAL / "chipset_support_by_uarch.csv", dtype=str, keep_default_na=False)
+    wiki_open = 0
+    if "wiki_support" in sup:
+        wiki_open = int(((sup["support"].str.strip() == "") & (sup["wiki_support"].str.strip() != "")).sum())
+    s["sheet_support_total"] -= wiki_open
+    s["sheet_support_wiki_open"] = wiki_open
     facts = pd.read_csv(MANUAL / "family_facts.csv", dtype=str, keep_default_na=False)
     s["facts_verified"] = int((facts["verified"].str.lower() == "true").sum())
     s["facts_total"] = len(facts)
@@ -199,6 +207,7 @@ def analysis_numbers() -> dict[str, Any]:
         n[f"b_{key}_n_with_pass"] = int((g["n_cpu_pass"] > 0).sum())
         n[f"b_{key}_max_span"] = f"{g['span_months'].max():.1f}" if g["span_months"].notna().any() else "—"
         n[f"b_{key}_max_families"] = int(g["n_cpu_families_pass"].max())
+        n[f"b_{key}_n_max_families"] = int((g["n_cpu_families_pass"] == g["n_cpu_families_pass"].max()).sum())
     par = pd.read_csv(AN / "c_pareto_monthly.csv")
     live = par[par["n_pairs"] > 0]
     n.update({"c_median_frontier": f"{live['n_frontier'].median():.0f}", "c_max_frontier": int(live["n_frontier"].max()),
@@ -274,10 +283,24 @@ def review_numbers() -> dict[str, Any]:
             **paper_stats.board_memory_stats(builds, pd.read_csv(OUT / "chipsets.csv"), pd.read_csv(OUT / "ram_specs.csv"))}
 
 
+def validation_numbers() -> dict[str, Any]:
+    """심사 2차 대응(validation_stats): UNKNOWN 원인별 관찰, PASS 근거, BIOS 날짜, 공식 단종일."""
+    pairs, chips = pd.read_csv(OUT / "pair_labels.csv"), pd.read_csv(OUT / "chipsets.csv")
+    cpu_chip = pairs[pairs["edge_type"] == "CPU_CHIPSET"]
+    base = dict(zip(chips["chipset_id"], chips["base_chipset_id"]))
+    basis = (cpu_chip.assign(dst=cpu_chip["dst"].map(lambda c: base.get(c, c)))
+             .groupby(["src", "dst"])["basis_verified"].all().rename("basis_verified").reset_index())
+    cc = _cpu_chipset_by_base(cpu_chip, chips).merge(basis, on=["src", "dst"], how="left")
+    return {**validation_stats.unknown_cause_tests(cc), **validation_stats.pass_basis(cc),
+            **validation_stats.bios_date_check(pd.read_csv(OUT / "observed_combos.csv"), cc,
+                                               pd.read_csv(OUT / "parts.csv"), chips),
+            **validation_stats.eol_stats(chips)}
+
+
 def collect() -> dict[str, Any]:
     n: dict[str, Any] = {}
     for part in (sheet_status(), verification_numbers(), rejudge_numbers(), node_numbers(), label_numbers(), provenance_numbers(), split_numbers(), analysis_numbers(),
-                 ablation_numbers(), review_numbers(), gpu_warning_numbers()):
+                 ablation_numbers(), review_numbers(), validation_numbers(), gpu_warning_numbers()):
         n.update(part)
     n["min_observed_reports"] = int(load_config()["release"]["min_observed_reports"])
     n["pending_sheets"] = n["sheet_support_done"] < n["sheet_support_total"] or n["sheet_verify_done"] < n["sheet_verify_total"]

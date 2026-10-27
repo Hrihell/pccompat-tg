@@ -121,10 +121,18 @@ def board_memory_stats(builds: pd.DataFrame, chips: pd.DataFrame, rams: pd.DataF
     return n
 
 
+def holm_adjusted(p_values: np.ndarray) -> np.ndarray:
+    """Holm 단계적 보정 p값(입력 순서 유지)."""
+    p = np.asarray(p_values, dtype=float)
+    order = np.argsort(p)
+    stepped = np.maximum.accumulate(np.minimum(1.0, (len(p) - np.arange(len(p))) * p[order]))
+    out = np.empty_like(stepped)
+    out[order] = stepped
+    return out
+
+
 def holm_significant(p_values: np.ndarray, alpha: float = ALPHA) -> int:
-    p = np.sort(np.asarray(p_values, dtype=float))
-    adjusted = np.maximum.accumulate(np.minimum(1.0, (len(p) - np.arange(len(p))) * p))
-    return int((adjusted < alpha).sum())
+    return int((holm_adjusted(p_values) < alpha).sum())
 
 
 def proxy_distribution(validity: pd.DataFrame) -> dict[str, Any]:

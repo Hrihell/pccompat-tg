@@ -128,7 +128,26 @@ def build_chipsets(cfg: dict[str, Any]) -> pd.DataFrame:
     frame = result.frame
     frame["family"] = chips["family"].values
     # 칩셋 단종일: 다음 소켓 세대 칩셋의 첫 출시일(사용자 결정 (나)), config.lineage의 *_chipset 사슬
-    return assign_eol(frame, cfg["lineage"])
+    frame = assign_eol(frame, cfg["lineage"])
+    eol_path = MANUAL / "chipset_eol.csv"
+    sheet = pd.read_csv(eol_path, dtype=str, keep_default_na=False) if eol_path.exists() else pd.DataFrame()
+    return apply_official_eol(frame, sheet)
+
+
+def apply_official_eol(chips: pd.DataFrame, sheet: pd.DataFrame) -> pd.DataFrame:
+    """사람이 공식 자료로 확인한(verified=true) 단종일로 가정값을 바꾼다. 가정값은 eol_assumed_date에 남겨 오차를 잰다."""
+    out = chips.assign(eol_date=pd.to_datetime(chips["eol_date"]))
+    out["eol_assumed_date"] = out["eol_date"].where(out["eol_is_assumed"].astype("boolean").fillna(False))
+    if sheet.empty:
+        return out
+    ok = sheet[(sheet["verified"].str.strip().str.lower() == "true") & (sheet["eol_date"].str.strip() != "")]
+    official = dict(zip(ok["chipset"].str.strip(), pd.to_datetime(ok["eol_date"].str.strip())))
+    hit = out["name"].isin(official)
+    if not hit.any():
+        return out
+    out["eol_date"] = out["eol_date"].where(~hit, out["name"].map(official))
+    out.loc[hit, "eol_is_assumed"] = False
+    return out
 
 
 def _gens(v: Any) -> tuple[str, ...]:
@@ -206,20 +225,25 @@ def build_support(parts: pd.DataFrame, chips: pd.DataFrame) -> pd.DataFrame:
 
 def write_uarch_todo(support: pd.DataFrame, parts: pd.DataFrame, chips: pd.DataFrame) -> int:
     """NOT_LISTED인 (마이크로아키텍처, 칩셋) 조합을 사람 입력 시트로(CPU마다가 아니라 묶어서 → 입력량 축소).
+    위키 칩셋 표에서 온 칸(origin=WIKIPEDIA)도 공식 페이지 확인 대상으로 싣고, 위키 값은 wiki_support 참고 열에만 둔다.
     사람이 이미 채운 행(origin=MANUAL_UARCH)도 남겨야 다음 재실행에서 입력이 사라지지 않는다."""
     facts = pd.read_csv(MANUAL / "family_facts.csv", dtype=str, keep_default_na=False)
     uarch = facts[facts["kind"] == "cpu"].set_index("family")["uarch"]
     fam = parts.set_index("part_id")["family"]
     name = chips.set_index("chipset_id")["name"]
-    open_or_filled = (support["support"] == "NOT_LISTED") | (support["origin"] == "MANUAL_UARCH")
+    open_or_filled = support["support"].eq("NOT_LISTED") | support["origin"].isin(["MANUAL_UARCH", "WIKIPEDIA"])
     todo = support[open_or_filled].assign(
-        uarch=lambda d: d["cpu_id"].map(fam).map(uarch), chipset=lambda d: d["chipset_id"].map(name))
-    todo = todo.groupby(["uarch", "chipset"]).size().reset_index(name="n_cpus")
+        uarch=lambda d: d["cpu_id"].map(fam).map(uarch), chipset=lambda d: d["chipset_id"].map(name),
+        wiki=lambda d: d["support"].where(d["origin"] == "WIKIPEDIA"))
+    todo = (todo.groupby(["uarch", "chipset"])
+            .agg(n_cpus=("cpu_id", "size"), wiki_support=("wiki", "first")).reset_index())
     path = MANUAL / "chipset_support_by_uarch.csv"
     if path.exists():
         done = pd.read_csv(path, dtype=str, keep_default_na=False)
         done = done[done["chipset"].isin(set(todo["chipset"]))]
-        todo = todo.merge(done.drop(columns=["n_cpus"], errors="ignore"), on=["uarch", "chipset"], how="left")
+        todo = todo.merge(done.drop(columns=["n_cpus", "wiki_support"], errors="ignore"),
+                          on=["uarch", "chipset"], how="left")
+    todo["wiki_support"] = todo["wiki_support"].fillna("")
     for c in ["support", "source_url", "verified", "note"]:
         todo[c] = todo[c].fillna("") if c in todo else ""
     todo.to_csv(path, index=False)

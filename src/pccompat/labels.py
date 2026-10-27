@@ -70,8 +70,10 @@ def pair_labels(parts: pd.DataFrame, chips: pd.DataFrame, rams: pd.DataFrame, su
             s_ver = bool(sup.at[key, "verified"]) if key in sup.index else False
             v = rules.cpu_chipset(c["socket"], h["socket"], s_val)
             lo, hi = _overlap(cs[cid], ce[cid], hs[hid], he[hid])
+            # 소켓이 다르면 지원 근거 없이 FAIL이 정해지고, 같은 소켓이면 지원 근거(미지원 포함)가 검증돼야 한다
+            socket_fail = pd.notna(c["socket"]) and pd.notna(h["socket"]) and c["socket"] != h["socket"]
             rows.append(_row("CPU_CHIPSET", cid, hid, v, lo, hi,
-                             c["family"] in verified and h["family"] in verified and (v.label == "FAIL" or s_ver)))
+                             c["family"] in verified and h["family"] in verified and (socket_fail or s_ver)))
         for rid, r in rams.set_index("ram_id").iterrows():
             v = rules.cpu_ram(c["memory_gens"], c["max_memory_gb"], r["ddr_gen"], int(r["total_capacity_gb"]))
             rows.append(_row("CPU_RAM", cid, rid, v, cs[cid], ce[cid], c["family"] in verified))
