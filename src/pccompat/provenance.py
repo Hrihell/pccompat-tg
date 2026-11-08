@@ -6,6 +6,7 @@
 - 세대 사실(소켓·메모리 세대·최대 메모리, 칩셋 계열의 소켓·메모리 옵션): manual/family_facts.csv
   사람이 공식 URL로 검증하면 OFFICIAL·verified=true, 아니면 OTHER(Claude 사전 입력, 미검증)
 - 수동 출시일: manual/release_dates_todo.csv 에 채워진 행 → OFFICIAL·verified=true
+- GPU 사양 정정: manual/gpu_spec_check.csv 에서 공식 값과 달랐던 값 → OFFICIAL·verified=true(gpu_specs)
 공개본의 값은 data/out/parts.csv·chipsets.csv와 일치해야 한다(불일치는 issues로 보고).
 """
 
@@ -13,6 +14,7 @@ from __future__ import annotations
 
 import pandas as pd
 
+from pccompat import gpu_specs
 from pccompat.clean import coerce_types
 from pccompat.config import PROJECT_ROOT
 from pccompat.schema import FIELD_PROVENANCE
@@ -89,7 +91,8 @@ def build() -> tuple[pd.DataFrame, list]:
     cache = INTERIM / "provenance_cache.csv"
     if cache.exists() and cache.stat().st_size > 1:
         frames.append(pd.read_csv(cache, dtype=str, keep_default_na=False))
-    frames.append(pd.DataFrame(_facts_rows(parts, chips) + _release_rows()).astype(str))
+    gpu_fix = gpu_specs.provenance_rows(gpu_specs.corrections(gpu_specs.load()))
+    frames.append(pd.DataFrame(_facts_rows(parts, chips) + _release_rows() + gpu_fix).astype(str))
     prov = expand_to_variants(pd.concat(frames, ignore_index=True), chips)
     released = set(parts["part_id"]) | set(chips["chipset_id"])
     prov = prov[prov["entity_id"].isin(released)]

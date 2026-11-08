@@ -283,6 +283,9 @@ def review_numbers() -> dict[str, Any]:
             **paper_stats.board_memory_stats(builds, pd.read_csv(OUT / "chipsets.csv"), pd.read_csv(OUT / "ram_specs.csv"))}
 
 
+CLUSTER_BOOT = 1000  # 4.3절 CPU 단위 군집 부트스트랩 반복 수
+
+
 def validation_numbers() -> dict[str, Any]:
     """심사 2차 대응(validation_stats): UNKNOWN 원인별 관찰, PASS 근거, BIOS 날짜, 공식 단종일."""
     pairs, chips = pd.read_csv(OUT / "pair_labels.csv"), pd.read_csv(OUT / "chipsets.csv")
@@ -292,6 +295,7 @@ def validation_numbers() -> dict[str, Any]:
              .groupby(["src", "dst"])["basis_verified"].all().rename("basis_verified").reset_index())
     cc = _cpu_chipset_by_base(cpu_chip, chips).merge(basis, on=["src", "dst"], how="left")
     return {**validation_stats.unknown_cause_tests(cc), **validation_stats.pass_basis(cc),
+            **validation_stats.cluster_bootstrap(cc, CLUSTER_BOOT, int(load_config()["seed"])),
             **validation_stats.bios_date_check(pd.read_csv(OUT / "observed_combos.csv"), cc,
                                                pd.read_csv(OUT / "parts.csv"), chips),
             **validation_stats.eol_stats(chips)}

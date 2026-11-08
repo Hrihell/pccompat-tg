@@ -17,6 +17,7 @@ from typing import Any
 import pandas as pd
 import yaml
 
+from pccompat import gpu_specs
 from pccompat.clean import CleaningPipeline, assign_eol
 from pccompat.config import PROJECT_ROOT, load_config
 from pccompat.schema import CHIPSETS, PARTS, LIST_SEPARATOR
@@ -82,6 +83,8 @@ def build_parts(cfg: dict[str, Any]) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         parts.loc[mask, "release_date"] = r["release_date"]
         parts.loc[mask, "release_date_precision"] = r["release_date_precision"] or "DAY"
         parts.loc[mask, "release_date_type"] = "LAUNCH"
+    # 사람이 공식 페이지에서 확인한 GPU 사양이 위키 값과 다르면 공식 값으로(D1)
+    parts = gpu_specs.apply(parts, gpu_specs.corrections(gpu_specs.load()))
     # 세대 출시일 대체(위키 문서 단위, 사용자 결정): 표에 날짜가 없고 사람 입력도 없는 행만
     wcfg = yaml.safe_load((PROJECT_ROOT / "config" / "wikipedia.yml").read_text(encoding="utf-8"))
     fallback_rows = []

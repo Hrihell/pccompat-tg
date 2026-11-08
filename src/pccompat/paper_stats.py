@@ -81,9 +81,13 @@ def observed_tests(crosstab: pd.DataFrame) -> dict[str, Any]:
         return (int(crosstab.loc[label, "BOTH"]), int(crosstab.loc[label, "All"])) if label in crosstab.index else (0, 0)
     unk, pas, fail = row("UNKNOWN"), row("PASS"), row("FAIL")
     if not (unk[1] and pas[1] and fail[1]):
-        return {"x_obs_p_unknown_pass": "—", "x_obs_p_unknown_fail_mant": "—", "x_obs_p_unknown_fail_exp": "0"}
+        return {"x_obs_p_unknown_pass": "—", "x_obs_p_unknown_pass_mant": "—", "x_obs_p_unknown_pass_exp": "0",
+                "x_obs_p_unknown_fail_mant": "—", "x_obs_p_unknown_fail_exp": "0"}
+    p_pass = _fisher(unk, pas)
     mant, exp = _sci(_fisher(unk, fail))
-    return {"x_obs_p_unknown_pass": _p(_fisher(unk, pas)), "x_obs_p_unknown_fail_mant": mant, "x_obs_p_unknown_fail_exp": exp}
+    pmant, pexp = _sci(p_pass)
+    return {"x_obs_p_unknown_pass": _p(p_pass), "x_obs_p_unknown_pass_mant": pmant, "x_obs_p_unknown_pass_exp": pexp,
+            "x_obs_p_unknown_fail_mant": mant, "x_obs_p_unknown_fail_exp": exp}
 
 
 def _pct(s: pd.Series, lab: str) -> str:

@@ -65,16 +65,16 @@ UNKNOWN 원인(한 조합에 원인이 여러 개일 수 있음): 보드마다 �
 
 | 등급 | 뜻 | 개수 | 비율 |
 |---|---|---|---|
-| OFFICIAL | 사람이 제조사 공식 페이지에서 확인 | 668 | 25.9% |
+| OFFICIAL | 사람이 제조사 공식 페이지에서 확인 | 670 | 26.0% |
 | WIKIPEDIA_CITED_CELL | 위키 값 셀에 각주 | 26 | 1.0% |
 | WIKIPEDIA_CITED_ROW | 같은 행에 각주 | 537 | 20.9% |
 | WIKIPEDIA_CITED_COLUMN | 열 머리에 각주 | 0 | 0.0% |
 | WIKIPEDIA_FAMILY | 문서 단위 세대 출시일 | 0 | 0.0% |
-| WIKIPEDIA_UNCITED | 위키 값, 각주 없음 | 1,160 | 45.0% |
+| WIKIPEDIA_UNCITED | 위키 값, 각주 없음 | 1,158 | 45.0% |
 | OPEN_DATASET | 공개 데이터셋 관찰값 | 184 | 7.1% |
 | OTHER | 미확인 사전 입력 | 0 | 0.0% |
 
-확인된 값(verified=true): 668개. 등급별 정확도는 층화 표본(60건, 등급마다 최소 10건)을 사람이 공식 값과 대조해 Wilson 95% 신뢰구간으로 보고한다: WIKIPEDIA_CITED_CELL 7/7 (1.00, 0.65–1.00); WIKIPEDIA_CITED_ROW 15/15 (1.00, 0.80–1.00); WIKIPEDIA_FAMILY 5/10 (0.50, 0.24–0.76); WIKIPEDIA_UNCITED 17/18 (0.94, 0.74–0.99) (공식 값을 찾지 못한 10건 제외).
+확인된 값(verified=true): 670개. 등급별 정확도는 층화 표본(60건, 등급마다 최소 10건)을 사람이 공식 값과 대조해 Wilson 95% 신뢰구간으로 보고한다: WIKIPEDIA_CITED_CELL 7/7 (1.00, 0.65–1.00); WIKIPEDIA_CITED_ROW 15/15 (1.00, 0.80–1.00); WIKIPEDIA_FAMILY 5/10 (0.50, 0.24–0.76); WIKIPEDIA_UNCITED 17/18 (0.94, 0.74–0.99) (공식 값을 찾지 못한 10건 제외).
 
 ## 4. 전처리·정제·라벨링
 - 단위 통일(MHz, W, GB, USD). 출시가는 미국 출시가(MSRP) 1회 값.

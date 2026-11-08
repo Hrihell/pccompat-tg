@@ -4,6 +4,7 @@
 - v_pass_*: PASS 쌍 가운데 사람이 공식 페이지에서 확인하지 않은 근거(위키 칩셋 표)의 비율
 - v_bios_after_*: 관찰 보고의 BIOS 빌드 날짜가 CPU 출시일 이후인 비율(BIOS 필요 vs PASS)
 - v_eol_*: 공식 단종일을 확인한 칩셋 수와 가정 단종일의 오차(개월)
+- a_cl_*: 관찰률 차이(PASS−UNKNOWN, UNKNOWN−FAIL)의 CPU 단위 군집 부트스트랩(같은 CPU가 여러 쌍에 들어가는 점 고려)
 CPU–칩셋 쌍은 analysis._cpu_chipset_by_base로 분할 전 칩셋 기준으로 합친 표를 받는다(논문 e 분석과 같은 분모).
 """
 
@@ -60,6 +61,31 @@ def unknown_cause_tests(cc: pd.DataFrame) -> dict[str, Any]:
             n.update({f"{key}_p_pass": _p(adj[(c, "pass")]), f"{key}_p_fail_mant": mant, f"{key}_p_fail_exp": exp})
         else:
             n.update({f"{key}_p_pass": NA, f"{key}_p_fail_mant": NA, f"{key}_p_fail_exp": "0"})
+    return n
+
+
+def cluster_bootstrap(cc: pd.DataFrame, n_boot: int, seed: int) -> dict[str, Any]:
+    """CPU를 복원 추출해 그 CPU의 쌍을 통째로 넣는다. 점추정과 95% 백분위 구간(소수 셋째 자리)."""
+    d = cc.assign(observed=cc["evidence_type"] == "BOTH")
+
+    def diffs(rows: pd.DataFrame) -> dict[str, float]:
+        rate = {lab: rows.loc[rows["label"] == lab, "observed"].mean() for lab in ("PASS", "UNKNOWN", "FAIL")}
+        return {"pu": rate["PASS"] - rate["UNKNOWN"], "uf": rate["UNKNOWN"] - rate["FAIL"]}
+
+    point = diffs(d)
+    rng = np.random.default_rng(seed)
+    cpus = d["src"].unique()
+    groups = dict(tuple(d.groupby("src")))
+    boot: dict[str, list[float]] = {k: [] for k in point}
+    for _ in range(n_boot):
+        sample = pd.concat([groups[c] for c in rng.choice(cpus, len(cpus))])
+        for k, val in diffs(sample).items():
+            if np.isfinite(val):  # 한 라벨이 표본에서 빠지면 그 회차는 건너뛴다
+                boot[k].append(val)
+    n: dict[str, Any] = {}
+    for k in point:
+        n.update({f"a_cl_{k}": f"{point[k]:.3f}", f"a_cl_{k}_lo": f"{np.percentile(boot[k], 2.5):.3f}",
+                  f"a_cl_{k}_hi": f"{np.percentile(boot[k], 97.5):.3f}"})
     return n
 
 

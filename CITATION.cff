@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+title: "PCCompat-TG: temporal compatibility graph of desktop PC parts"
+version: "2026.10"
+date-released: "2026-11-08"
+url: "https://github.com/Hrihell/pccompat-tg"
+repository-code: "https://github.com/Hrihell/pccompat-tg"
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: Kim
+    given-names: Minsu
+    affiliation: "School of Computer Science, Semyung University"
+  - family-names: Kang
+    given-names: Ha Ye Jin
+    affiliation: "School of Computer Science, Semyung University"
+  - family-names: Lee
+    given-names: Suan
+    affiliation: "School of Computer Science, Semyung University"

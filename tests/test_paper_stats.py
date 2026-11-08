@@ -34,6 +34,7 @@ def test_observed_tests_formats_tiny_p_as_mantissa_exponent():
     ct = pd.DataFrame({"BOTH": [59, 345, 2], "All": [253, 1340, 6595]}, index=["UNKNOWN", "PASS", "FAIL"])
     n = paper_stats.observed_tests(ct)
     assert n["x_obs_p_unknown_pass"] == "0.43" and int(n["x_obs_p_unknown_fail_exp"]) < -80
+    assert (n["x_obs_p_unknown_pass_mant"], n["x_obs_p_unknown_pass_exp"]) == ("4.3", "-1")
 
 
 def _split_fixture():

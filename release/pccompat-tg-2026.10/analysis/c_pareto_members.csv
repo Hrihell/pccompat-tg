@@ -1650,7 +1650,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i3-12100f,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i3-12100f,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i3-12100f,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i3-12100f,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i3-12100f,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i3-12100f,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i3-12100f,gpu:nvidia:geforce-rtx-3070-ti
@@ -1662,7 +1661,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i3-12300,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i3-12300,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i3-12300,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i3-12300,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i3-12300,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i3-12300,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i3-12300,gpu:nvidia:geforce-rtx-3070-ti
@@ -1674,7 +1672,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i5-12400f,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i5-12400f,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i5-12400f,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i5-12400f,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i5-12400f,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i5-12400f,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i5-12400f,gpu:nvidia:geforce-rtx-3070-ti
@@ -1686,7 +1683,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i5-12500,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i5-12500,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i5-12500,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i5-12500,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i5-12500,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i5-12500,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i5-12500,gpu:nvidia:geforce-rtx-3070-ti
@@ -1698,7 +1694,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i5-12600,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i5-12600,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i5-12600,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i5-12600,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i5-12600,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i5-12600,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i5-12600,gpu:nvidia:geforce-rtx-3070-ti
@@ -1710,7 +1705,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i5-12600kf,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i5-12600kf,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i5-12600kf,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i5-12600kf,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i5-12600kf,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i5-12600kf,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i5-12600kf,gpu:nvidia:geforce-rtx-3070-ti
@@ -1723,7 +1717,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4090
 2022-10-01,cpu:intel:core-i7-12700f,gpu:nvidia:geforce-rtx-3050
 2022-10-01,cpu:intel:core-i7-12700f,gpu:nvidia:geforce-rtx-3070
@@ -1743,7 +1736,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4090
 2022-10-01,cpu:intel:core-i9-12900f,gpu:nvidia:geforce-rtx-3070
 2022-10-01,cpu:intel:core-i9-12900f,gpu:nvidia:geforce-rtx-3070-ti
@@ -1761,7 +1753,6 @@ month,cpu_id,gpu_id
 2022-10-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2022-10-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2022-10-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2022-10-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2022-10-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4090
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:amd:radeon-rx-6500-xt
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:amd:radeon-rx-6800-xt
@@ -1770,7 +1761,6 @@ month,cpu_id,gpu_id
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2022-11-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4080
 2022-11-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4090
 2022-11-01,cpu:intel:core-i7-13700kf,gpu:amd:radeon-rx-6500-xt
@@ -1780,7 +1770,6 @@ month,cpu_id,gpu_id
 2022-11-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2022-11-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2022-11-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2022-11-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2022-11-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4080
 2022-11-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4090
 2022-11-01,cpu:intel:core-i9-13900kf,gpu:amd:radeon-rx-6500-xt
@@ -1790,7 +1779,6 @@ month,cpu_id,gpu_id
 2022-11-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2022-11-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2022-11-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2022-11-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2022-11-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4080
 2022-11-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4090
 2022-12-01,cpu:intel:core-i5-13600kf,gpu:amd:radeon-rx-6500-xt
@@ -1800,7 +1788,6 @@ month,cpu_id,gpu_id
 2022-12-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2022-12-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2022-12-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2022-12-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2022-12-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4080
 2022-12-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4090
 2022-12-01,cpu:intel:core-i7-13700kf,gpu:amd:radeon-rx-6500-xt
@@ -1810,7 +1797,6 @@ month,cpu_id,gpu_id
 2022-12-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2022-12-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2022-12-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2022-12-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2022-12-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4080
 2022-12-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4090
 2022-12-01,cpu:intel:core-i9-13900kf,gpu:amd:radeon-rx-6500-xt
@@ -1820,223 +1806,191 @@ month,cpu_id,gpu_id
 2022-12-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2022-12-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2022-12-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2022-12-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2022-12-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4080
 2022-12-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4090
 2023-01-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-01-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-01-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-01-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-01-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
 2023-01-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4080
 2023-01-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4090
 2023-02-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-02-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-02-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-02-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-02-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
 2023-02-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4080
 2023-02-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4090
 2023-03-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-03-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-03-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-03-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-03-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
 2023-03-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4080
 2023-03-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4090
 2023-04-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4080
@@ -2044,7 +1998,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4080
@@ -2052,7 +2005,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4080
@@ -2060,7 +2012,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4080
@@ -2068,7 +2019,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4080
@@ -2076,7 +2026,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4080
@@ -2084,7 +2033,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4080
@@ -2092,7 +2040,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4080
@@ -2100,7 +2047,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4080
@@ -2108,7 +2054,6 @@ month,cpu_id,gpu_id
 2023-04-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-04-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-04-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-04-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-04-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070
 2023-04-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
 2023-04-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4080
@@ -2117,7 +2062,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2127,7 +2071,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2137,7 +2080,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
@@ -2147,7 +2089,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2157,7 +2098,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2167,7 +2107,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2177,7 +2116,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2187,7 +2125,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2197,7 +2134,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2207,7 +2143,6 @@ month,cpu_id,gpu_id
 2023-05-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-05-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-05-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-05-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-05-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4060-ti
 2023-05-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070
 2023-05-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
@@ -2217,7 +2152,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2227,7 +2161,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2237,7 +2170,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
@@ -2247,7 +2179,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2257,7 +2188,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2267,7 +2197,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2277,7 +2206,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2287,7 +2215,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2297,7 +2224,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2307,7 +2233,6 @@ month,cpu_id,gpu_id
 2023-06-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-06-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-06-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-06-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-06-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4060-ti
 2023-06-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070
 2023-06-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
@@ -2318,7 +2243,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a310
 2023-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2023-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2023-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2329,7 +2253,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2340,7 +2263,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2351,7 +2273,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
@@ -2362,7 +2283,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2373,7 +2293,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2384,7 +2303,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2395,7 +2313,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2406,7 +2323,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2417,7 +2333,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2428,7 +2343,6 @@ month,cpu_id,gpu_id
 2023-07-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-07-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-07-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-07-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-07-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4060-ti
 2023-07-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070
 2023-07-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
@@ -2439,7 +2353,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a310
 2023-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2023-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2023-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2450,7 +2363,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2461,7 +2373,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2472,7 +2383,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
@@ -2483,7 +2393,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2494,7 +2403,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2505,7 +2413,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2516,7 +2423,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2527,7 +2433,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2538,7 +2443,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2549,7 +2453,6 @@ month,cpu_id,gpu_id
 2023-08-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-08-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-08-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-08-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-08-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4060-ti
 2023-08-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070
 2023-08-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
@@ -2560,7 +2463,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a310
 2023-09-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2023-09-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2023-09-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2571,7 +2473,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2582,7 +2483,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2593,7 +2493,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i5-13500,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
@@ -2604,7 +2503,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i5-13600,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2615,7 +2513,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i5-13600kf,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i5-13600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2626,7 +2523,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2637,7 +2533,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i7-13700kf,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i7-13700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2648,7 +2543,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2659,7 +2553,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i9-13900kf,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i9-13900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2670,7 +2563,6 @@ month,cpu_id,gpu_id
 2023-09-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a310
 2023-09-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a380
 2023-09-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a750
-2023-09-01,cpu:intel:core-i9-13900ks,gpu:intel:arc-a770-8gb
 2023-09-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4060-ti
 2023-09-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070
 2023-09-01,cpu:intel:core-i9-13900ks,gpu:nvidia:geforce-rtx-4070-ti
@@ -2682,7 +2574,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2023-10-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2023-10-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2023-10-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2694,7 +2585,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i3-13100f,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i3-13100f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2706,7 +2596,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i5-13400f,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i5-13400f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2718,7 +2607,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i5-13500,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i5-13500,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i5-13500,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i5-13500,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i5-13500,gpu:nvidia:geforce-rtx-4070-ti
@@ -2730,7 +2618,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i5-13600,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i5-13600,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i5-13600,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i5-13600,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i5-13600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2742,7 +2629,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2754,7 +2640,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i7-13700f,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i7-13700f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2766,7 +2651,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2778,7 +2662,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i9-13900f,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i9-13900f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2790,7 +2673,6 @@ month,cpu_id,gpu_id
 2023-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2023-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2023-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2023-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2023-10-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-10-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070
 2023-10-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2802,7 +2684,6 @@ month,cpu_id,gpu_id
 2023-11-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2023-11-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2023-11-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2023-11-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2023-11-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2023-11-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070
 2023-11-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2814,7 +2695,6 @@ month,cpu_id,gpu_id
 2023-11-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2023-11-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2023-11-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2023-11-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2023-11-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2023-11-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070
 2023-11-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2826,7 +2706,6 @@ month,cpu_id,gpu_id
 2023-11-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2023-11-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2023-11-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2023-11-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2023-11-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-11-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070
 2023-11-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2838,7 +2717,6 @@ month,cpu_id,gpu_id
 2023-11-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2023-11-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2023-11-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2023-11-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2023-11-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-11-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070
 2023-11-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2850,7 +2728,6 @@ month,cpu_id,gpu_id
 2023-11-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2023-11-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2023-11-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2023-11-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2023-11-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-11-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070
 2023-11-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2862,7 +2739,6 @@ month,cpu_id,gpu_id
 2023-12-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2023-12-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2023-12-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2023-12-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2023-12-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2023-12-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070
 2023-12-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti
@@ -2874,7 +2750,6 @@ month,cpu_id,gpu_id
 2023-12-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2023-12-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2023-12-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2023-12-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2023-12-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2023-12-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070
 2023-12-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti
@@ -2886,7 +2761,6 @@ month,cpu_id,gpu_id
 2023-12-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2023-12-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2023-12-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2023-12-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2023-12-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-12-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070
 2023-12-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2898,7 +2772,6 @@ month,cpu_id,gpu_id
 2023-12-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2023-12-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2023-12-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2023-12-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2023-12-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-12-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070
 2023-12-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2910,7 +2783,6 @@ month,cpu_id,gpu_id
 2023-12-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2023-12-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2023-12-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2023-12-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2023-12-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2023-12-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070
 2023-12-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti
@@ -2922,7 +2794,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-01-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-01-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-01-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -2934,7 +2805,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-01-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-01-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-01-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -2946,7 +2816,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -2958,7 +2827,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -2970,7 +2838,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -2982,7 +2849,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -2994,7 +2860,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3006,7 +2871,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3018,7 +2882,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3030,7 +2893,6 @@ month,cpu_id,gpu_id
 2024-01-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-01-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-01-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-01-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-01-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-01-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-01-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3042,7 +2904,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-02-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-02-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-02-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3054,7 +2915,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-02-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-02-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-02-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3066,7 +2926,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3078,7 +2937,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3090,7 +2948,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3102,7 +2959,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3114,7 +2970,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3126,7 +2981,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3138,7 +2992,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3150,7 +3003,6 @@ month,cpu_id,gpu_id
 2024-02-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-02-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-02-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-02-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-02-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-02-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-02-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3162,7 +3014,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-03-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-03-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-03-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3174,7 +3025,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-03-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-03-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-03-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3186,7 +3036,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3198,7 +3047,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3210,7 +3058,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3222,7 +3069,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3234,7 +3080,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3246,7 +3091,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3258,7 +3102,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3270,7 +3113,6 @@ month,cpu_id,gpu_id
 2024-03-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-03-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-03-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-03-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-03-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-03-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-03-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3282,7 +3124,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-04-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-04-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-04-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3294,7 +3135,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-04-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-04-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-04-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3306,7 +3146,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3318,7 +3157,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3330,7 +3168,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3342,7 +3179,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3354,7 +3190,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3366,7 +3201,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3378,7 +3212,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3390,7 +3223,6 @@ month,cpu_id,gpu_id
 2024-04-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-04-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-04-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-04-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-04-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-04-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-04-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3402,7 +3234,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-05-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-05-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-05-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3414,7 +3245,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-05-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-05-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-05-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3426,7 +3256,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3438,7 +3267,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3450,7 +3278,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3462,7 +3289,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3474,7 +3300,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3486,7 +3311,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3498,7 +3322,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3510,7 +3333,6 @@ month,cpu_id,gpu_id
 2024-05-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-05-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-05-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-05-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-05-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-05-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-05-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3522,7 +3344,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-06-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-06-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-06-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3534,7 +3355,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-06-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-06-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-06-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3546,7 +3366,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3558,7 +3377,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3570,7 +3388,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3582,7 +3399,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3594,7 +3410,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3606,7 +3421,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3618,7 +3432,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3630,7 +3443,6 @@ month,cpu_id,gpu_id
 2024-06-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-06-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-06-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-06-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-06-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-06-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-06-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3642,7 +3454,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-07-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3654,7 +3465,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-07-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-07-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-07-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3666,7 +3476,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3678,7 +3487,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3690,7 +3498,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3702,7 +3509,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3714,7 +3520,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3726,7 +3531,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3738,7 +3542,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3750,7 +3553,6 @@ month,cpu_id,gpu_id
 2024-07-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-07-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-07-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-07-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-07-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-07-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-07-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3762,7 +3564,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a380
 2024-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a580
 2024-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a750
-2024-08-01,cpu:amd:ryzen-5-7500f,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:amd:ryzen-5-7500f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3774,7 +3575,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a380
 2024-08-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a580
 2024-08-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a750
-2024-08-01,cpu:amd:ryzen-5-7600,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:amd:ryzen-5-7600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3786,7 +3586,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3798,7 +3597,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3810,7 +3608,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3822,7 +3619,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3834,7 +3630,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3846,7 +3641,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3858,7 +3652,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3870,7 +3663,6 @@ month,cpu_id,gpu_id
 2024-08-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-08-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-08-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-08-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-08-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-08-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-08-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3882,7 +3674,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a380
 2024-09-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a580
 2024-09-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a750
-2024-09-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3894,7 +3685,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3906,7 +3696,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3918,7 +3707,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3930,7 +3718,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3942,7 +3729,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3954,7 +3740,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3966,7 +3751,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3978,7 +3762,6 @@ month,cpu_id,gpu_id
 2024-09-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-09-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-09-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-09-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-09-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-09-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-09-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -3990,7 +3773,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a380
 2024-10-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a580
 2024-10-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a750
-2024-10-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4002,7 +3784,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i3-14100f,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i3-14100f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4014,7 +3795,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i5-14500,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i5-14500,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i5-14500,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i5-14500,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i5-14500,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4026,7 +3806,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i5-14600,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i5-14600,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i5-14600,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i5-14600,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i5-14600,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4038,7 +3817,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i5-14600kf,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i5-14600kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4050,7 +3828,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i7-14700f,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i7-14700f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4062,7 +3839,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i7-14700kf,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i7-14700kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4074,7 +3850,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i9-14900f,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i9-14900f,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4086,7 +3861,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-i9-14900kf,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-i9-14900kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4098,7 +3872,6 @@ month,cpu_id,gpu_id
 2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a380
 2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a580
 2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a750
-2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a770-8gb
 2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4070-super
 2024-10-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4110,7 +3883,6 @@ month,cpu_id,gpu_id
 2024-11-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a380
 2024-11-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a580
 2024-11-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a750
-2024-11-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a770-8gb
 2024-11-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4060-ti
 2024-11-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-super
 2024-11-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4122,7 +3894,6 @@ month,cpu_id,gpu_id
 2024-11-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a380
 2024-11-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a580
 2024-11-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a750
-2024-11-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a770-8gb
 2024-11-01,cpu:amd:ryzen-5-9600x,gpu:nvidia:geforce-rtx-4060-ti
 2024-11-01,cpu:amd:ryzen-5-9600x,gpu:nvidia:geforce-rtx-4070-super
 2024-11-01,cpu:amd:ryzen-5-9600x,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4134,7 +3905,6 @@ month,cpu_id,gpu_id
 2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a380
 2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a580
 2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a750
-2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a770-8gb
 2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:nvidia:geforce-rtx-4070-super
 2024-11-01,cpu:intel:core-ultra-5-245kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4146,7 +3916,6 @@ month,cpu_id,gpu_id
 2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a380
 2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a580
 2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a750
-2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a770-8gb
 2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4070-super
 2024-11-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4158,7 +3927,6 @@ month,cpu_id,gpu_id
 2024-11-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a380
 2024-11-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a580
 2024-11-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a750
-2024-11-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a770-8gb
 2024-11-01,cpu:intel:core-ultra-9-285k,gpu:nvidia:geforce-rtx-4060-ti
 2024-11-01,cpu:intel:core-ultra-9-285k,gpu:nvidia:geforce-rtx-4070-super
 2024-11-01,cpu:intel:core-ultra-9-285k,gpu:nvidia:geforce-rtx-4070-ti-super
@@ -4169,7 +3937,6 @@ month,cpu_id,gpu_id
 2024-12-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a380
 2024-12-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a580
 2024-12-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a750
-2024-12-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-a770-8gb
 2024-12-01,cpu:amd:ryzen-5-8500g,gpu:intel:arc-b580
 2024-12-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4060-ti
 2024-12-01,cpu:amd:ryzen-5-8500g,gpu:nvidia:geforce-rtx-4070-super
@@ -4181,7 +3948,6 @@ month,cpu_id,gpu_id
 2024-12-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a380
 2024-12-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a580
 2024-12-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a750
-2024-12-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-a770-8gb
 2024-12-01,cpu:amd:ryzen-5-9600x,gpu:intel:arc-b580
 2024-12-01,cpu:amd:ryzen-5-9600x,gpu:nvidia:geforce-rtx-4060-ti
 2024-12-01,cpu:amd:ryzen-5-9600x,gpu:nvidia:geforce-rtx-4070-super
@@ -4193,7 +3959,6 @@ month,cpu_id,gpu_id
 2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a380
 2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a580
 2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a750
-2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-a770-8gb
 2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:intel:arc-b580
 2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-12-01,cpu:intel:core-ultra-5-245kf,gpu:nvidia:geforce-rtx-4070-super
@@ -4205,7 +3970,6 @@ month,cpu_id,gpu_id
 2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a380
 2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a580
 2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a750
-2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-a770-8gb
 2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:intel:arc-b580
 2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4060-ti
 2024-12-01,cpu:intel:core-ultra-7-265kf,gpu:nvidia:geforce-rtx-4070-super
@@ -4217,7 +3981,6 @@ month,cpu_id,gpu_id
 2024-12-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a380
 2024-12-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a580
 2024-12-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a750
-2024-12-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-a770-8gb
 2024-12-01,cpu:intel:core-ultra-9-285k,gpu:intel:arc-b580
 2024-12-01,cpu:intel:core-ultra-9-285k,gpu:nvidia:geforce-rtx-4060-ti
 2024-12-01,cpu:intel:core-ultra-9-285k,gpu:nvidia:geforce-rtx-4070-super

@@ -86,3 +86,13 @@ def test_eol_stats_reports_official_coverage_and_error_months():
 
     assert (n["v_eol_official_n"], n["v_eol_total"]) == (1, 3)
     assert n["v_eol_err_median_mo"] == "6.0"
+
+
+def test_cluster_bootstrap_resamples_cpus_and_keeps_point_estimate():
+    # 같은 CPU가 여러 쌍에 들어간다: cpu-a는 PASS 쌍 둘, cpu-b는 UNKNOWN 쌍 둘, cpu-c는 FAIL 쌍 둘
+    cc = pd.DataFrame({"src": ["a", "a", "b", "b", "c", "c"], "label": ["PASS", "PASS", "UNKNOWN", "UNKNOWN", "FAIL", "FAIL"],
+                       "evidence_type": ["BOTH", "BOTH", "BOTH", "DOCUMENTED", "DOCUMENTED", "DOCUMENTED"]})
+    n = vs.cluster_bootstrap(cc, n_boot=200, seed=0)
+    assert (n["a_cl_pu"], n["a_cl_uf"]) == ("0.500", "0.500")
+    assert float(n["a_cl_pu_lo"]) <= 0.5 <= float(n["a_cl_pu_hi"])
+    assert n == vs.cluster_bootstrap(cc, n_boot=200, seed=0)  # 시드 고정이면 같다
