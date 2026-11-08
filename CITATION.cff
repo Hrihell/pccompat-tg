@@ -6,9 +6,7 @@ version: "2026.10"
 date-released: "2026-11-08"
 url: "https://github.com/Hrihell/pccompat-tg"
 repository-code: "https://github.com/Hrihell/pccompat-tg"
-license:
-  - MIT
-  - CC-BY-4.0
+license: CC-BY-4.0
 authors:
   - family-names: Kim
     given-names: Minsu

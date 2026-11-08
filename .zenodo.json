@@ -1,0 +1,13 @@
+{
+  "title": "PCCompat-TG: temporal compatibility graph of desktop PC parts",
+  "upload_type": "dataset",
+  "version": "2026.10",
+  "description": "PCCompat-TG 2026.10: a temporal compatibility graph of desktop PC parts (CPU, chipset, RAM standard, GPU) with sales intervals, three-valued compatibility labels (PASS / UNKNOWN / FAIL) with UNKNOWN causes, and value-level provenance tiers. Dataset in release/pccompat-tg-2026.10/ (CC BY 4.0, see DATASHEET.md); pipeline code in src/pccompat (MIT).",
+  "license": "cc-by-4.0",
+  "creators": [
+    {"name": "Kim, Minsu", "affiliation": "School of Computer Science, Semyung University"},
+    {"name": "Kang, Ha Ye Jin", "affiliation": "School of Computer Science, Semyung University"},
+    {"name": "Lee, Suan", "affiliation": "School of Computer Science, Semyung University"}
+  ],
+  "keywords": ["PC parts", "compatibility", "temporal graph", "provenance", "dataset"]
+}
